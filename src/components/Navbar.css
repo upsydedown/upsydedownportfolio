@@ -1,0 +1,28 @@
+.navbarMain {
+    width: 100%;
+    position: sticky;
+    z-index: 2;
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.navItem {
+    list-style: none;
+    margin: 0.75rem 0.5rem 0.75rem 0.5rem;
+}
+
+.navItem > a {
+    text-align: center;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    /* transition: all 0.15s ease-in-out; */
+}
+.navItem a:hover,
+.navItem a:active {
+    border-bottom: 3px solid red;
+}
