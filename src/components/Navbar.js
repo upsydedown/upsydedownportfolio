@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navbar.css";
+import Hamburger from "./Hamburger";
 import { Navlink, useMatch, useResolvedPath } from "react-router-dom";
 
 // const CustomLink = ({ to, content, ...children }) => {
@@ -14,21 +15,21 @@ import { Navlink, useMatch, useResolvedPath } from "react-router-dom";
 //   );
 // };
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // State to track navbar visibility on mobile
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen); // Toggle navbar visibility
-  };
+const Navbar = ({ isOpen, onToggleMenu }) => {
   return (
     <>
       <section className="navbarMain">
         <div className={`nav ${isOpen ? "active" : ""}`}>
+          <Hamburger onToggle={onToggleMenu} /> {/* Pass toggle function */}
           <nav className="navMenu">
             <li className="navItem">
-              <a href="">Home</a>
+              <a href="">
+                {/* <AllInclusiveIcon /> */}
+                Home
+              </a>
             </li>
-            <li className="navItem">
+
+            <li className="navItem ">
               <a href="">About</a>
             </li>
             <li className="navItem">
