@@ -1,7 +1,11 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Hamburger from "./components/Hamburger";
+import Home from "./components/Home.js";
+import Project from "./components/Projects.js";
+import About from "./components/About.js";
+import Play from "./components/Play.js";
 
 function App() {
   return (
@@ -9,7 +13,12 @@ function App() {
       <section className="App">
         <div className="mainBody">
           <Navbar />
-          {/* <Hamburger /> */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Project />} />
+            <Route path="/play" element={<Play />} />
+          </Routes>
         </div>
       </section>
     </>

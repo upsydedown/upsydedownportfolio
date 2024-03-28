@@ -1,6 +1,7 @@
 .navbarMain {
     width: 100%;
     position: sticky;
+    top: 0;
     z-index: 2;
 }
 
@@ -11,23 +12,59 @@
     flex-direction: row;
 }
 
-.navItem {
+.navMenu > li {
     list-style: none;
     margin: 0.75rem 0.5rem 0.75rem 0.5rem;
 }
 
-.navItem > a {
+.navMenu > li > a {
+    color: white;
     text-align: center;
-
     text-decoration: none;
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    /* transition: all 0.15s ease-in-out; */
+    transition: all 0.15s ease-in-out;
 }
-.navItem a:hover,
-.navItem a:active {
-    border-bottom: 3px solid red;
+.navMenu li a:not(.active):hover {
+    border-bottom: 1px solid #d7a257;
+    color: #d7a257;
+    background-color: transparent;
+}
+.active {
+    background-color: #d7a257;
 }
 
-.nav.active {
-    width: 5rem;
+@media (max-width: 480px) {
+    .navMenu {
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        background-color: transparent;
+        animation: fadeInTop 0.35s ease-in-out;
+    }
+
+    .active {
+        display: flex;
+    }
+
+    @keyframes fadeInTop {
+        from {
+            opacity: 0;
+            transform: translateY(-100%); /* Move the menu off-screen initially */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0); /* Move the menu back to its original position */
+        }
+    }
+
+    @keyframes fadeOutTop {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+    }
 }
