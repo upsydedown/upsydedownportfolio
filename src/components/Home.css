@@ -1,0 +1,9 @@
+.homeMain {
+    background-color: red;
+    height: 100dvh;
+    margin-top: 2rem;
+}
+
+.flex {
+    display: flex;
+}

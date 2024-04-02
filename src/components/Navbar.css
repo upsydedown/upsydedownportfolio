@@ -39,7 +39,7 @@
         justify-content: center;
         flex-direction: column;
         background-color: transparent;
-        animation: fadeInTop 0.35s ease-in-out;
+        animation: fadeInTop 0.25s ease-in-out;
     }
 
     .active {

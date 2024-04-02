@@ -39,7 +39,7 @@ const Navbar = () => {
               <span className="hamburger__bar" id="bar3"></span>
             </div>
           </button>
-          <nav className={`navMenu ${isOpen ? "active" : ""}`}>
+          <nav className={`navMenu ${isOpen ? "active" : "inactive"}`}>
             <CustomLink to="/" content="Home" />
             <CustomLink to="/about" content="About" />
             <CustomLink to="/projects" content="Projects" />

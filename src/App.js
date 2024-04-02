@@ -12,13 +12,17 @@ function App() {
     <>
       <section className="App">
         <div className="mainBody">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Project />} />
-            <Route path="/play" element={<Play />} />
-          </Routes>
+          <div className="NavigationPanel">
+            <Navbar />
+          </div>
+          <div className="PagesPanel">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Project />} />
+              <Route path="/play" element={<Play />} />
+            </Routes>
+          </div>
         </div>
       </section>
     </>
