@@ -1,9 +1,139 @@
 .homeMain {
-    background-color: red;
-    height: 100dvh;
+    height: 92dvh;
     margin-top: 2rem;
 }
 
 .flex {
     display: flex;
+}
+
+.homeBody {
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+    height: 100%;
+    margin: 0 10% 0 10%;
+    padding: 2rem;
+}
+
+.home__LeftContainer {
+    /* position: relative; */
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+
+.home__LeftContainer > img {
+    width: 100%;
+}
+
+.home__RightContainer {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__HeadingTextContainer {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home__HeadingTextContainer > h1 {
+    text-align: center;
+}
+
+.home__CaptionTextContainer {
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.cap {
+    font-size: 1.2rem;
+}
+
+.bar {
+    font-size: 2rem;
+    padding-bottom: 0.25rem;
+}
+
+.rings-container {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%; /* Image takes full width of container */
+    object-fit: cover; /* Ensure image covers the container */
+    z-index: 1; /* Place the image behind the rings */
+}
+
+.ring-container {
+    /* width: fit-content; */
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.ring {
+    position: absolute;
+    border-radius: 0 50rem 50rem 0; /* Create semi-circle shape */
+    border: 1px solid #fff;
+    animation: spin infinite linear;
+    background-color: transparent;
+    transform-origin: 0 50%; /* Rotate around bottom center */
+}
+
+.ring-1 {
+    width: 10rem;
+    height: 20rem;
+    animation-name: spinClockwise;
+    animation-duration: 10s;
+}
+
+.ring-2 {
+    width: 15rem;
+    height: 30rem;
+    animation-name: spinCounterClockwise;
+    animation-duration: 15s;
+}
+
+@keyframes spinClockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinCounterClockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/* Responsive Adjustments (Optional) */
+
+@media (width < 768px) {
+    /* Adjust styles for smaller screens (e.g., reduce ring size) */
+    .ring {
+        border-width: 3px;
+    }
+    .homeBody {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
 }
