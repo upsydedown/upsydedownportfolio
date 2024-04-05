@@ -59,22 +59,7 @@
     padding-bottom: 0.25rem;
 }
 
-.rings-container {
-    position: relative;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-
-.image {
-    width: 100%; /* Image takes full width of container */
-    object-fit: cover; /* Ensure image covers the container */
-    z-index: 1; /* Place the image behind the rings */
-}
-
 .ring-container {
-    /* width: fit-content; */
     position: absolute;
     top: 30%;
     left: 30%;

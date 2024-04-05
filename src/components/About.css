@@ -1,0 +1,33 @@
+.hexagon-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Six columns for six vertices */
+    grid-template-rows: repeat(2, 1fr); /* Two rows for top and bottom parts */
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    margin: 0 auto; /* Center the hexagon horizontally */
+}
+
+.hexagon-grid > img {
+    width: 100%; /* Images fill their respective grid cells */
+    height: 100%;
+    object-fit: cover;
+}
+
+.hexagon-grid img:nth-child(1),
+.hexagon-grid img:nth-child(6) {
+    grid-column: 1 / span 2; /* Span two columns for top corners */
+    grid-row: 1;
+}
+.hexagon-grid img:nth-child(2),
+.hexagon-grid img:nth-child(5) {
+    grid-column: 3 / span 2; /* Span two columns for middle corners */
+    grid-row: 1;
+}
+
+.hexagon-grid img:nth-child(3),
+.hexagon-grid img:nth-child(4) {
+    grid-column: 2 / span 3; /* Span three columns for bottom corners */
+    grid-row: 2;
+}
+
+/* Responsive Adjustments (Optional) */
