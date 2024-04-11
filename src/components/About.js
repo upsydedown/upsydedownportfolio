@@ -2,24 +2,38 @@ import React from "react";
 import "./About.css";
 
 
+const List = ({ heading, image }) => {
+  <span className="stack">
+    <img src={image} alt="" srcset="" />
+    <h5>{heading}</h5>
+  </span>
+}
+
 const About = () => {
   return (
+    <>
+      <section className="aboutMain">
+        <div className="aboutBody">
+          <div className="about__LeftContainer">
+            <div className="about__LeftContainer__HexagonalGrid">
 
+            </div>
+            <div className="about__LeftContainer__TechStack">
+              <List />
+            </div>
+          </div>
+          <div className="about__RightContainer">
+            <img src="" alt="" srcset="" />
+            <caption className="about__RightContainer__ParagraphBody">
+              <p>
 
+              </p>
+            </caption>
+          </div>
 
-
-    <div className="hexagon-grid">
-
-      <img src="https://images.unsplash.com/photo-1584023878218-888f8caadcae?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset="" />
-      <img src="https://images.unsplash.com/photo-1584023878218-888f8caadcae?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset="" />
-      <img src="https://images.unsplash.com/photo-1584023878218-888f8caadcae?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset="" />
-      <img src="https://images.unsplash.com/photo-1584023878218-888f8caadcae?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset="" />
-      <img src="https://images.unsplash.com/photo-1584023878218-888f8caadcae?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset="" />
-      <img src="https://images.unsplash.com/photo-1584023878218-888f8caadcae?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset="" />
-
-    </div>
-
-
+        </div>
+      </section>
+    </>
 
 
 
