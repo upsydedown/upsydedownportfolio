@@ -8,7 +8,7 @@ const Home = () => {
       <section className="homeMain">
         <div className="flex homeBody">
           <div className="home__LeftContainer">
-            <img className="home__Image" src="https://images.unsplash.com/photo-1707343844152-6d33a0bb32c3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset="" />
+            <img className="home__Image" src="./images/home_image.png" />
             <div className="ring-container">
               <div className="ring ring-1"></div>
               <div className="ring ring-2"></div>

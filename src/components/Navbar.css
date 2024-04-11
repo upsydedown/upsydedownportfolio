@@ -26,7 +26,8 @@
 
 .logo > a,
 .navMenu > li > a {
-    color: white;
+    font-family: Lumos;
+    color: #d7a257;
     text-align: center;
     text-decoration: none;
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
@@ -39,6 +40,7 @@
 }
 .active {
     background-color: #d7a257;
+    color: white;
 }
 
 @media (max-width: 480px) {

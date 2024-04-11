@@ -1,7 +1,16 @@
 import React from "react";
-import "./Project.css";
+import "./Projects.css";
 const Projects = () => {
-  return <div>Projects</div>;
+  return (
+    <>
+      <section className="projectsMain">
+        <div className="projectsBody">
+
+
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default Projects;

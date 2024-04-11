@@ -1,0 +1,30 @@
+.aboutMain {
+    height: 92dvh;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutBody {
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 0 10% 0 10%;
+    padding: 2rem;
+}
+
+.about__LeftContainer {
+    background-color: yellow;
+    height: 50rem;
+    flex: 0.5;
+}
+
+.about__RightContainer {
+    height: 50rem;
+    background-color: rgb(255, 0, 191);
+    flex: 0.5;
+}

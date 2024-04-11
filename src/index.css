@@ -1,6 +1,19 @@
+@font-face {
+  font-family: "Lumos";
+  src:
+    local("Lumos"),
+    url("fonts/LUMOS.TTF") format("truetype");
+}
+@font-face {
+  font-family: "Parry Hotter";
+  src:
+    local("Parry Hotter"),
+    url("fonts/ParryHotter.ttf") format("truetype");
+}
+
 * {
   margin: 0rem;
   padding: 0rem;
   box-sizing: border-box;
-  background-color: #22272e;
+  background-color: #1d1e23;
 }

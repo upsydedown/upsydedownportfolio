@@ -13,24 +13,31 @@ const About = () => {
   return (
     <>
       <section className="aboutMain">
-        <div className="aboutBody">
-          <div className="about__LeftContainer">
+        <div className="flex aboutBody">
+          <div className="flex about__LeftContainer">
             <div className="about__LeftContainer__HexagonalGrid">
 
             </div>
             <div className="about__LeftContainer__TechStack">
               <List />
+              <List />
+              <List />
+              <List />
+              <List />
+              <List />
             </div>
           </div>
-          <div className="about__RightContainer">
+          <div className="flex about__RightContainer">
             <img src="" alt="" srcset="" />
             <caption className="about__RightContainer__ParagraphBody">
+              <h1>
+
+              </h1>
               <p>
 
               </p>
             </caption>
           </div>
-
         </div>
       </section>
     </>

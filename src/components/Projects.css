@@ -1,0 +1,32 @@
+.hexagon-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Six columns for hexagon layout */
+    grid-gap: 10px; /* Adjust spacing between hexagons as needed */
+    width: fit-content; /* Ensures container width adjusts to content */
+}
+
+.hexagon {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent; /* Left half of hexagon */
+    border-right: 75px solid transparent; /* Right half of hexagon */
+    border-bottom: 100px solid #ccc; /* Bottom of hexagon (adjust color) */
+}
+
+.hexagon::before {
+    content: "";
+    position: absolute;
+    top: -50px; /* Adjust vertical positioning of image */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Adjust image width as needed */
+    height: 100px; /* Adjust image height as needed */
+    background-image: url("https://plus.unsplash.com/premium_photo-1690263583138-155eca49f57d?q=80&w=1030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Replace with your image URL */
+    background-size: cover; /* Ensure image fills the container */
+}
+
+/* Optional: Additional styling for hover or focus effects */
+.hexagon:hover {
+    border-color: #ddd; /* Change border color on hover (optional) */
+}
