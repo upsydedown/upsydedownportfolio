@@ -4,6 +4,7 @@
     local("Lumos"),
     url("fonts/LUMOS.TTF") format("truetype");
 }
+
 @font-face {
   font-family: "Parry Hotter";
   src:

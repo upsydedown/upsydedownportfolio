@@ -40,7 +40,6 @@
 }
 .active {
     background-color: #d7a257;
-    color: white;
 }
 
 @media (max-width: 480px) {

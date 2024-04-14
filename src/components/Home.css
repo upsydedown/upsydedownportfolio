@@ -1,6 +1,5 @@
 .homeMain {
-    height: 92dvh;
-    margin-top: 2rem;
+    height: 90dvh;
     overflow: hidden;
 }
 
@@ -28,9 +27,15 @@
 .home__Image {
     position: relative;
     width: 90%;
-
+    animation: imageUpdown infinite alternate 3s ease-in-out;
     background-color: transparent;
     z-index: 5;
+}
+
+.home__HeaderText {
+    font-family: Parry Hotter;
+    font-size: 6rem;
+    color: #d7a257;
 }
 
 .home__RightContainer {
@@ -58,16 +63,18 @@
 .cap {
     font-family: "Lumos";
     font-size: 1.2rem;
+    color: #d7a257;
 }
 
 .bar {
+    color: #d7a257;
     font-size: 2rem;
     padding-bottom: 0.25rem;
 }
 
 .ring-container {
     position: absolute;
-    top: 54%;
+    top: 48%;
     left: 29%;
     /* overflow: hidden; */
     display: flex;
@@ -95,6 +102,18 @@
     height: 45rem;
     animation-name: spinCounterClockwise;
     animation-duration: 15s;
+}
+
+@keyframes imageUpdown {
+    0% {
+        transform: translateY(0); /* Start at base position (no movement) */
+    }
+    50% {
+        transform: translateY(-50px); /* Move the image up 50px */
+    }
+    100% {
+        transform: translateY(0); /* Return to base position */
+    }
 }
 
 @keyframes spinClockwise {

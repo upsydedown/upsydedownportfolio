@@ -8,7 +8,7 @@ const Home = () => {
       <section className="homeMain">
         <div className="flex homeBody">
           <div className="home__LeftContainer">
-            <img className="home__Image" src="./images/home_image.png" />
+            <img className="home__Image" src="./images/Home/home_image.png" />
             <div className="ring-container">
               <div className="ring ring-1"></div>
               <div className="ring ring-2"></div>
