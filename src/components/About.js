@@ -29,7 +29,7 @@ const About = () => {
             </div>
           </div>
           <div className="flex about__RightContainer">
-            <img src="" alt="" srcset="" />
+            <img src="./images/About/about_bg.png" alt="" srcset="" />
             <caption className="about__RightContainer__ParagraphBody">
               <h1>
                 Excerpt from the Alchemist's Personal Diary

@@ -1,5 +1,5 @@
 .aboutMain {
-    height: 92dvh;
+    height: 100dvh;
     overflow: hidden;
     margin-top: 2rem;
 }
@@ -13,18 +13,40 @@
 .aboutBody {
     justify-content: space-around;
     gap: 1rem;
-    margin: 0 10% 0 10%;
+    /* margin: 0 10% 0 10%; */
     padding: 2rem;
 }
 
 .about__LeftContainer {
-    background-color: yellow;
-    height: 50rem;
     flex: 0.5;
 }
 
 .about__RightContainer {
-    height: 50rem;
-    background-color: rgb(255, 0, 191);
     flex: 0.5;
+    flex-flow: column wrap;
+}
+
+.about__RightContainer > img {
+    height: 60rem;
+}
+
+.about__RightContainer__ParagraphBody {
+    position: relative;
+    top: -38.5rem;
+    left: 2rem;
+    width: 15rem;
+    background: none;
+}
+
+.about__RightContainer__ParagraphBody > h1 {
+    background-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.about__RightContainer__ParagraphBody > p {
+    background-color: transparent;
+    font-size: 0.9rem;
+}
+
+.about__LeftContainer__TechStack {
 }
