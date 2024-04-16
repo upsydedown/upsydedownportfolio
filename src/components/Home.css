@@ -1,6 +1,21 @@
 .homeMain {
-    height: 90dvh;
+    height: 94dvh;
     overflow: hidden;
+    background-image: linear-gradient(
+        to top,
+        #1d1e23,
+        #1a1b22,
+        #161921,
+        #121620,
+        #0e131f,
+        #0c111e,
+        #0a0f1d,
+        #070d1c,
+        #070d1a,
+        #070c19,
+        #070c17,
+        #070b15
+    ) !important;
 }
 
 .flex {
@@ -26,7 +41,7 @@
 
 .home__Image {
     position: relative;
-    width: 90%;
+    width: clamp(10rem, 55vw, 40rem);
     animation: imageUpdown infinite alternate 3s ease-in-out;
     background-color: transparent;
     z-index: 5;
@@ -35,7 +50,11 @@
 .home__HeaderText {
     font-family: Parry Hotter;
     font-size: 6rem;
-    color: #d7a257;
+    background-blend-mode: multiply;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to left, #9b7456, #e6d699, #9b7456),
+        linear-gradient(to top, #9b7456, #e6d699, #9b7456);
 }
 
 .home__RightContainer {
@@ -83,11 +102,13 @@
 
 .ring {
     position: absolute;
-    border-radius: 0 50rem 50rem 0; /* Create semi-circle shape */
+    border-radius: 0 50rem 50rem 0;
+    /* Create semi-circle shape */
     border: 1px solid #d7a257;
     animation: spin infinite linear;
     background-color: transparent;
-    transform-origin: 0 50%; /* Rotate around bottom center */
+    transform-origin: 0 50%;
+    /* Rotate around bottom center */
 }
 
 .ring-1 {
@@ -106,13 +127,18 @@
 
 @keyframes imageUpdown {
     0% {
-        transform: translateY(0); /* Start at base position (no movement) */
+        transform: translateY(0);
+        /* Start at base position (no movement) */
     }
+
     50% {
-        transform: translateY(-50px); /* Move the image up 50px */
+        transform: translateY(-50px);
+        /* Move the image up 50px */
     }
+
     100% {
-        transform: translateY(0); /* Return to base position */
+        transform: translateY(0);
+        /* Return to base position */
     }
 }
 
@@ -120,6 +146,7 @@
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -129,6 +156,7 @@
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(-360deg);
     }
@@ -141,6 +169,7 @@
     .ring {
         border-width: 3px;
     }
+
     .homeBody {
         flex-flow: column wrap;
         justify-content: center;

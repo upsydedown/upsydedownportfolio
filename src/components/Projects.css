@@ -1,32 +1,64 @@
-.hexagon-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); /* Six columns for hexagon layout */
-    grid-gap: 10px; /* Adjust spacing between hexagons as needed */
-    width: fit-content; /* Ensures container width adjusts to content */
+.projectsMain {
+    height: 100dvh;
+    overflow: hidden;
+    background-image: linear-gradient(
+        to top,
+        #1d1e23,
+        #1a1b22,
+        #161921,
+        #121620,
+        #0e131f,
+        #0c111e,
+        #0a0f1d,
+        #070d1c,
+        #070d1a,
+        #070c19,
+        #070c17,
+        #070b15
+    ) !important;
 }
 
-.hexagon {
-    position: relative;
-    width: 0;
-    height: 0;
-    border-left: 75px solid transparent; /* Left half of hexagon */
-    border-right: 75px solid transparent; /* Right half of hexagon */
-    border-bottom: 100px solid #ccc; /* Bottom of hexagon (adjust color) */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hexagon::before {
+.projectsMain::before {
     content: "";
     position: absolute;
-    top: -50px; /* Adjust vertical positioning of image */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px; /* Adjust image width as needed */
-    height: 100px; /* Adjust image height as needed */
-    background-image: url("https://plus.unsplash.com/premium_photo-1690263583138-155eca49f57d?q=80&w=1030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Replace with your image URL */
-    background-size: cover; /* Ensure image fills the container */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgb(219, 219, 233);
 }
 
-/* Optional: Additional styling for hover or focus effects */
-.hexagon:hover {
-    border-color: #ddd; /* Change border color on hover (optional) */
+.projectsBody {
+    justify-content: space-evenly;
+}
+
+.projects__LeftContainer {
+    position: relative;
+    left: clamp(10rem, 25vw, 28rem);
+    flex: 0.3;
+}
+.projects__LeftContainer > img {
+    width: clamp(20rem, 45vw, 100rem);
+    z-index: 0;
+}
+.projects__CenterContainer {
+    flex: 0.3;
+}
+.projects__CenterContainer > img {
+    width: clamp(50rem, 75vw, 100rem);
+    z-index: 1;
+}
+.projects__RightContainer {
+    position: relative;
+    right: clamp(10rem, 25vw, 28rem);
+    flex: 0.3;
+}
+.projects__RightContainer > img {
+    width: clamp(20rem, 45vw, 100rem);
+    z-index: 0;
 }

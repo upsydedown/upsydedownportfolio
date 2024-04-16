@@ -20,12 +20,15 @@ const About = () => {
             </div>
             <div className="about__LeftContainer__TechStack">
               <h3></h3>
-              <List />
-              <List />
-              <List />
-              <List />
-              <List />
-              <List />
+              <div className="about__LeftContainer__TechStackList">
+                <List heading="I love you" image="./images/About/home_image.png" />
+                <List />
+                <List />
+                <List />
+                <List />
+                <List />
+
+              </div>
             </div>
           </div>
           <div className="flex about__RightContainer">
@@ -35,11 +38,11 @@ const About = () => {
                 Excerpt from the Alchemist's Personal Diary
               </h1>
               <p>
-                Scribe today a new inscription: the art of code as bridge, not barricade, to the
-                human experience.
-                A seasoned developer forsooth, 2+ years I have toiled in the fires of the front-end,
-                yet my true enchantment lies in the
-                alchemy of user-centric design.
+                Scribe today a new inscription: the art of <br /> code as bridge, not barricade, to  <br />
+                human experience.<br />
+                A seasoned developer forsooth, 2+ years I <br /> have toiled in the fires of the front-end,<br />
+                yet my true enchantment lies in the<br />
+                alchemy of user-centric design.<br />
                 Here, logic and empathy weave spells to craft products that resonate with the
                 very essence of human behavior.
                 Imagine, if you will, interfaces that
@@ -56,7 +59,7 @@ const About = () => {
             </caption>
           </div>
         </div>
-      </section>
+      </section >
     </>
 
 
