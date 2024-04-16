@@ -7,7 +7,7 @@ const List = ({ heading, image }) => {
     <img src={image} alt="" srcset="" />
     <h5>{heading}</h5>
   </span>
-}
+};
 
 const About = () => {
   return (
