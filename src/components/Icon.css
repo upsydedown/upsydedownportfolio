@@ -1,0 +1,16 @@
+.stack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    margin: 0.25rem;
+    /* background-color: blue; */
+    padding: 0.25rem;
+}
+
+.stack > img {
+    width: fit-content;
+}
+.stack > h5 {
+    font-size: 1rem;
+}

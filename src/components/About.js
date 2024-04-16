@@ -1,13 +1,9 @@
 import React from "react";
 import "./About.css";
+import Icon from "./Icon.js"
 
 
-const List = ({ heading, image }) => {
-  <span className="stack">
-    <img src={image} alt="" srcset="" />
-    <h5>{heading}</h5>
-  </span>
-};
+
 
 const About = () => {
   return (
@@ -16,18 +12,17 @@ const About = () => {
         <div className="flex aboutBody">
           <div className="flex about__LeftContainer">
             <div className="about__LeftContainer__HexagonalGrid">
-
             </div>
             <div className="about__LeftContainer__TechStack">
               <h3></h3>
               <div className="about__LeftContainer__TechStackList">
-                <List heading="I love you" image="./images/About/home_image.png" />
-                <List />
-                <List />
-                <List />
-                <List />
-                <List />
-
+                <Icon heading="FireBase" image="./images/About/Secondary/firebase.png" />
+                <Icon heading="Figma" image="./images/About/Secondary/figma.png" />
+                <Icon heading="Framer" image="./images/About/Secondary/framer.png" />
+                <Icon heading="WebFlow" image="./images/About/Secondary/webflow.png" />
+                <Icon heading="Vercel" image="./images/About/Secondary/vercel.png" />
+                <Icon heading="Java" image="./images/About/Secondary/java.png" />
+                <Icon heading="MUI" image="./images/About/Secondary/MUI.png" />
               </div>
             </div>
           </div>

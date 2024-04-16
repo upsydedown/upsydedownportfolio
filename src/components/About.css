@@ -35,7 +35,11 @@
 .about__LeftContainer {
     flex: 0.5;
 }
-
+.about__LeftContainer__HexagonalGrid {
+}
+.about__LeftContainer__TechStackList {
+    flex-direction: column wrap;
+}
 .about__RightContainer {
     flex: 0.5;
     flex-flow: column wrap;
@@ -68,10 +72,7 @@
 .about__LeftContainer__TechStackList {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-}
+    justify-content: space-between;
 
-.stack > img > h5 {
-    color: rgb(136, 50, 50);
-    font-size: 5rem;
+    /* background-color: red; */
 }
