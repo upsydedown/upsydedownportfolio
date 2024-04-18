@@ -1,7 +1,7 @@
 .aboutMain {
-    height: 100dvh;
-    overflow: hidden;
-    margin-top: 2rem;
+    height: 92dvh;
+    /* overflow: hidden; */
+    /* margin-top: 2rem; */
     background-image: radial-gradient(
         ellipse,
         #1d1e23,
@@ -33,46 +33,89 @@
 }
 
 .about__LeftContainer {
+    flex-flow: column wrap;
     flex: 0.5;
 }
+
 .about__LeftContainer__HexagonalGrid {
+    /* background-color: red; */
+    /* height: 100rem; */
+    width: 100%;
 }
+
+.about__LeftContainer__TechStack > h3 {
+    position: relative;
+    top: 15rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+}
+
 .about__LeftContainer__TechStackList {
+    position: relative;
+    top: 15rem;
+    justify-content: center;
     flex-direction: column wrap;
 }
+
 .about__RightContainer {
     flex: 0.5;
     flex-flow: column wrap;
 }
 
 .about__RightContainer > img {
-    height: 60rem;
+    height: 65rem;
 }
 
 .about__RightContainer__ParagraphBody {
     position: relative;
-    top: -42.5rem;
-    left: 2rem;
+    top: -47.5rem;
+    left: 2.2rem;
     width: 20rem;
     background: none;
 }
-.about__RightContainer__ParagraphBody > p {
-}
 
 .about__RightContainer__ParagraphBody > h1 {
+    font-family: "Astloch", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
     background-color: transparent;
     margin-bottom: 1rem;
 }
 
 .about__RightContainer__ParagraphBody > p {
+    font-family: "Macondo Swash Caps";
+    font-weight: 400;
+    font-style: normal;
     background-color: transparent;
     font-size: 0.9rem;
 }
 
-.about__LeftContainer__TechStackList {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.Hex {
+    position: absolute;
+    left: 20%;
+}
+.Hex:nth-child(1) {
+    top: 20%;
+}
+.Hex:nth-child(6) {
+    top: 70%;
+}
+.Hex:nth-child(3),
+.Hex:nth-child(2) {
+    top: 35%;
+}
+.Hex:nth-child(4),
+.Hex:nth-child(5) {
+    top: 55%;
+}
 
-    /* background-color: red; */
+.Hex:nth-child(3),
+.Hex:nth-child(4) {
+    left: 10%;
+}
+.Hex:nth-child(2),
+.Hex:nth-child(5) {
+    left: 30%;
 }

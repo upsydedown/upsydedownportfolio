@@ -1,9 +1,10 @@
 import React from 'react';
 import "./Icon.css";
 
-const Icon = ({ heading, image }) => {
+const Icon = ({ style, heading, image }) => {
+    const finalClassname = style ? style : "stack";
     return (
-        <span className="stack">
+        <span className={finalClassname}>
             <img className="image" src={image} alt="" srcset="" />
             <h5>{heading}</h5>
         </span>

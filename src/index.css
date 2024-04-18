@@ -12,11 +12,14 @@
     url("fonts/ParryHotter.ttf") format("truetype");
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Macondo+Swash+Caps&display=swap");
+
 * {
   margin: 0rem;
   padding: 0rem;
   box-sizing: border-box;
 }
+
 body {
   background-color: #070b15;
 }
