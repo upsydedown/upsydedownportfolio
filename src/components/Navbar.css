@@ -16,30 +16,38 @@
     align-items: center;
     justify-content: flex-end;
     flex-direction: row;
+
 }
 
 .logo,
-.navMenu > li {
+.navMenu>li {
+
     list-style: none;
     margin: 0.75rem 0.5rem 0.75rem 0.5rem;
 }
 
-.logo > a,
-.navMenu > li > a {
+.logo>a,
+.navMenu>li>a {
+
     font-family: Lumos;
+    font-weight: 600;
+    font-size: 1.25rem;
     color: #d7a257;
     text-align: center;
     text-decoration: none;
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
     transition: all 0.15s ease-in-out;
 }
-.navMenu li a:not(.active):hover {
+
+.navMenu li a:not(.active):hover,
+.navMenu li a:not(.active):focus {
     border-bottom: 1px solid #d7a257;
-    color: #d7a257;
     background-color: transparent;
 }
+
 .active {
     background-color: #d7a257;
+    color: #070b15 !important;
 }
 
 @media (max-width: 480px) {
@@ -48,6 +56,7 @@
         align-items: center;
         justify-content: space-between;
     }
+
     .navMenu {
         position: absolute;
         top: 20%;
@@ -66,11 +75,14 @@
     @keyframes fadeInTop {
         from {
             opacity: 0;
-            transform: translateY(-100%); /* Move the menu off-screen initially */
+            transform: translateY(-100%);
+            /* Move the menu off-screen initially */
         }
+
         to {
             opacity: 1;
-            transform: translateY(0); /* Move the menu back to its original position */
+            transform: translateY(0);
+            /* Move the menu back to its original position */
         }
     }
 
@@ -79,6 +91,7 @@
             opacity: 1;
             transform: translateY(0);
         }
+
         to {
             opacity: 0;
             transform: translateY(-100%);

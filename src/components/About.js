@@ -12,6 +12,10 @@ const About = () => {
         <div className="flex aboutBody">
           <div className="flex about__LeftContainer">
             <div className="about__LeftContainer__HexagonalGrid">
+              <div className="about__LeftContainer__HexagonalGridHeading">
+                <h3>Muggle's</h3>
+                <h1>TechStack</h1>
+              </div>
               <Icon style="Hex" heading="" image="./images/About/Hexagon/HTML_logo.png" />
               <Icon style="Hex" heading="" image="./images/About/Hexagon/CSS_logo.png" />
               <Icon style="Hex" heading="" image="./images/About/Hexagon/JavaScript_logo.png" />
@@ -19,7 +23,7 @@ const About = () => {
               <Icon style="Hex" heading="" image="./images/About/Hexagon/Next.js_logo.png" />
               <Icon style="Hex" heading="" image="./images/About/Hexagon/Redux_logo.png" />
             </div>
-            <div className="about__LeftContainer__TechStack">
+            <div className="flex about__LeftContainer__TechStack">
               <h3>Under the Alchemist's Toolbelt</h3>
               <div className="flex about__LeftContainer__TechStackList">
                 <Icon heading="FireBase" image="./images/About/Secondary/firebase.png" />

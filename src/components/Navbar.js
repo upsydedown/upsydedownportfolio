@@ -40,10 +40,10 @@ const Navbar = () => {
             </div>
           </button>
           <nav className={`navMenu ${isOpen ? "active" : "inactive"}`}>
-            <CustomLink to="/" content="Home" />
-            <CustomLink to="/about" content="About" />
-            <CustomLink to="/projects" content="Projects" />
-            <CustomLink to="/play" content="Play" />
+            <CustomLink to="/" content="Sanctum" />
+            <CustomLink to="/about" content="My Grimore" />
+            <CustomLink to="/projects" content="My Incantations" />
+            <CustomLink to="/play" content="Alchemist's LogBook" />
           </nav>
         </div>
       </section>
