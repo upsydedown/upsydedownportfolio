@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import 'animate.css';
+import "animate.css";
 
 const Home = () => {
   return (
@@ -16,9 +16,7 @@ const Home = () => {
           </div>
           <div className="flex home__RightContainer">
             <div className="flex home__HeadingTextContainer">
-              <h1 className="home__HeaderText">
-                Chintan Senapati
-              </h1>
+              <h1 className="home__HeaderText">Chintan Senapati</h1>
               <div className="flex home__CaptionTextContainer">
                 <span className="cap animate__animated animate__fadeInUp animate__delay-3s">
                   UI/UX
@@ -36,7 +34,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
     </>
   );
 };

@@ -3,7 +3,6 @@ import { NavLink, useMatch, useResolvedPath } from "react-router-dom";
 import "./Navbar.css";
 import "./Hamburger.css";
 
-
 const CustomLink = ({ to, content, ...children }) => {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });

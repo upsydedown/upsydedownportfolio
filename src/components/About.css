@@ -38,7 +38,30 @@
 .about__LeftContainer__HexagonalGrid {
     /* background-color: red; */
     /* height: 100rem; */
+    flex-flow: column wrap;
     width: 100%;
+}
+
+.about__LeftContainer__HexagonalGridHeading {
+    position: absolute;
+    top: 25rem;
+    /* left: 15rem; */
+    flex-flow: column wrap;
+    z-index: 1;
+}
+
+.about__LeftContainer__HexagonalGridHeading>h3 {
+    color: wheat;
+    font-family: "Macondo Swash Caps";
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about__LeftContainer__HexagonalGridHeading>h1 {
+    color: wheat;
+    font-family: Parry Hotter;
+    font-size: 5rem;
 }
 
 .Hex {
@@ -46,7 +69,11 @@
     left: 20%;
 }
 
-.Hex:nth-child(1) {
+.Hex>img {
+    width: 12rem;
+}
+
+.Hex:nth-child(7) {
     top: 15%;
 }
 
@@ -74,11 +101,15 @@
     left: 35%;
 }
 
+
+
 .about__LeftContainer__TechStack {
     flex-flow: column wrap;
 }
 
 .about__LeftContainer__TechStack>h3 {
+    font-family: Lumos;
+    font-size: 1.5rem;
     position: relative;
     top: 15rem;
     margin-bottom: 1rem;
