@@ -1,0 +1,33 @@
+.contactMain {
+    height: 100dvh;
+    /* overflow: hidden; */
+    background-image: radial-gradient(ellipse,
+            #1d1e23,
+            #1a1b20,
+            #16181e,
+            #13151b,
+            #0f1119,
+            #0d0f18,
+            #0a0d16,
+            #070b15,
+            #070b15,
+            #070b15,
+            #070b15,
+            #070b15) !important;
+}
+
+.contactBody {
+    gap: 1rem;
+    /* margin: 0 10% 0 10%; */
+    /* background-color: red; */
+}
+
+.contact__LeftContainer {
+    flex: 0.5;
+    /* background-color: yellow; */
+}
+
+.contact__RightContainer {
+    flex: 0.5;
+    /* background-color: blue; */
+}

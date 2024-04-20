@@ -17,12 +17,6 @@
             #070b15) !important;
 }
 
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .aboutBody {
     justify-content: space-around;
     gap: 1rem;

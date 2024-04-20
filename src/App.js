@@ -6,6 +6,7 @@ import Home from "./components/Home.js";
 import Project from "./components/Projects.js";
 import About from "./components/About.js";
 import Play from "./components/Play.js";
+import Contact from "./components/Contact.js";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Project />} />
               <Route path="/play" element={<Play />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
         </div>

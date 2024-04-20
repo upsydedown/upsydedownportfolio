@@ -16,12 +16,6 @@
             #070b15) !important;
 }
 
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .projectsMain::before {
     content: "";
     background-image: url(path: );
@@ -33,6 +27,7 @@
 }
 
 .projectsBody {
+    margin: 0 10% 0 10%;
     justify-content: space-evenly;
 }
 
