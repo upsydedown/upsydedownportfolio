@@ -49,12 +49,15 @@
 
 .home__HeaderText {
     font-family: Parry Hotter;
-    font-size: 6rem;
+    font-size: 5.5em;
     background-blend-mode: multiply;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(to left, #9b7456, #e6d699, #9b7456),
         linear-gradient(to top, #9b7456, #e6d699, #9b7456);
+        background-size: 200% auto;
+    background-clip: text;
+    animation: textclip 2s linear infinite;
 }
 
 .home__RightContainer {
@@ -81,13 +84,13 @@
 
 .cap {
     font-family: "Lumos";
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     color: #d7a257;
 }
 
 .bar {
-    color: #d7a257;
-    font-size: 2rem;
+    color: #71552E;
+    font-size: 2.2rem;
     padding-bottom: 0.25rem;
 }
 

@@ -19,15 +19,11 @@ const Home = () => {
               <h1 className="home__HeaderText">Chintan Senapati</h1>
               <div className="flex home__CaptionTextContainer">
                 <span className="cap animate__animated animate__fadeInUp animate__delay-3s">
-                  UI/UX
+                  UI wizard
                 </span>
                 <span className="bar">|</span>
                 <span className="cap animate__animated animate__fadeInUp animate__delay-2s">
-                  Product Designer
-                </span>
-                <span className="bar">|</span>
-                <span className="cap animate__animated animate__fadeInUp animate__delay-4s">
-                  Architect
+                  Research Alchemist
                 </span>
               </div>
             </div>
