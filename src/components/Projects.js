@@ -10,10 +10,39 @@ const Projects = () => {
           <div className="projects__LeftContainer">
             <img src="./images/Projects/left_dragon.png" alt="" srcset="" />
           </div>
-          <div className="projects__CenterContainer">
+          <div className="flex projects__CenterContainer">
             <img src="./images/Projects/Shelf.png" alt="" srcset="" />
-            <div className="bookStack">
-              <Icon />
+            <div className="flex bookStack">
+              <div className="flex bookStack1">
+                <Icon style="" heading="" image="./images/Projects/1021.png" />
+                <Icon
+                  style=""
+                  heading=""
+                  image="./images/Projects/linkedin.png"
+                />
+                <Icon
+                  style=""
+                  heading=""
+                  image="./images/Projects/aranieco.png"
+                />
+              </div>
+              <div className="flex bookStack2">
+                <Icon style="" heading="" image="./images/Projects/book1.png" />
+                <Icon style="" heading="" image="./images/Projects/book1.png" />
+                <Icon
+                  style=""
+                  heading=""
+                  image="./images/Projects/hemasource.png"
+                />
+                <Icon style="" heading="" image="./images/Projects/book1.png" />
+                <Icon style="" heading="" image="./images/Projects/book1.png" />
+              </div>
+              <div className="flex bookStack3">
+                <Icon style="" heading="" image="./images/Projects/book2.png" />
+                <Icon style="" heading="" image="./images/Projects/book2.png" />
+                <Icon style="" heading="" image="./images/Projects/book2.png" />
+                <Icon style="" heading="" image="./images/Projects/book2.png" />
+              </div>
             </div>
           </div>
           <div className="projects__RightContainer">

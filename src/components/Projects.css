@@ -1,21 +1,19 @@
 .projectsMain {
     height: 100dvh;
     overflow: hidden;
-    background-image: radial-gradient(
-        ellipse,
-        #1d1e23,
-        #1a1b20,
-        #16181e,
-        #13151b,
-        #0f1119,
-        #0d0f18,
-        #0a0d16,
-        #070b15,
-        #070b15,
-        #070b15,
-        #070b15,
-        #070b15
-    ) !important;
+    background-image: radial-gradient(ellipse,
+            #1d1e23,
+            #1a1b20,
+            #16181e,
+            #13151b,
+            #0f1119,
+            #0d0f18,
+            #0a0d16,
+            #070b15,
+            #070b15,
+            #070b15,
+            #070b15,
+            #070b15) !important;
 }
 
 .flex {
@@ -26,6 +24,7 @@
 
 .projectsMain::before {
     content: "";
+    background-image: url(path: );
     position: absolute;
     top: 0;
     left: 0;
@@ -43,24 +42,36 @@
     flex: 0.3;
     z-index: 1;
 }
-.projects__LeftContainer > img {
+
+.projects__LeftContainer>img {
     width: clamp(20rem, 45vw, 100rem);
 }
+
 .projects__CenterContainer {
     position: relative;
     left: -1rem;
     flex: 0.3;
     z-index: 0;
 }
-.projects__CenterContainer > img {
+
+.bookStack {
+    flex-flow: column wrap;
+    position: absolute;
+    /* top: 10%; */
+
+}
+
+.projects__CenterContainer>img {
     width: clamp(50rem, 75vw, 100rem);
 }
+
 .projects__RightContainer {
     position: relative;
     right: clamp(10rem, 25vw, 28rem);
     flex: 0.3;
     z-index: 1;
 }
-.projects__RightContainer > img {
+
+.projects__RightContainer>img {
     width: clamp(20rem, 45vw, 100rem);
 }
