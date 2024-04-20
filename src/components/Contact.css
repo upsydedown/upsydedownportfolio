@@ -23,11 +23,26 @@
 }
 
 .contact__LeftContainer {
+    flex-direction: column wrap;
     flex: 0.5;
     /* background-color: yellow; */
+}
+
+.contact__LeftContainer>img {
+    width: fill;
+}
+
+.contact__LeftContainer__Icon {
+    position: absolute;
+    top: 10%;
+    align-items: flex-end;
 }
 
 .contact__RightContainer {
     flex: 0.5;
     /* background-color: blue; */
+}
+
+.contact__RightContainer>img {
+    width: fill;
 }
