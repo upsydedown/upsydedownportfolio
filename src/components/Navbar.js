@@ -25,7 +25,7 @@ const Navbar = () => {
       <section className="navbarMain">
         <div className="navBody">
           <li className="logo">
-            <a href="">Website</a>
+            <a href="">C.S.</a>
           </li>
           <button
             className={`hamburger__main ${isOpen ? "close" : "open"}`}
@@ -40,7 +40,7 @@ const Navbar = () => {
           </button>
           <nav className={`navMenu ${isOpen ? "active" : "inactive"}`}>
             <CustomLink to="/" content="Sanctum" />
-            <CustomLink to="/about" content="My Grimore" />
+            <CustomLink to="/about" content="My Grimoire" />
             <CustomLink to="/projects" content="My Incantations" />
             <CustomLink to="/play" content="Alchemist's LogBook" />
           </nav>

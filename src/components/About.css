@@ -51,17 +51,29 @@
 }
 
 .about__LeftContainer__HexagonalGridHeading>h3 {
-    color: wheat;
+    color: #D7A257;
     font-family: "Macondo Swash Caps";
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
     font-style: normal;
 }
 
 .about__LeftContainer__HexagonalGridHeading>h1 {
-    color: wheat;
     font-family: Parry Hotter;
-    font-size: 5rem;
+    font-size: 3rem;
+    background-blend-mode: multiply;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to left, #9b7456, #e6d699, #9b7456),
+        linear-gradient(to top, #9b7456, #e6d699, #9b7456);
+    background-size: 200% auto;
+    background-clip: text;
+    animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
 
 .Hex {
@@ -109,12 +121,12 @@
 
 .about__LeftContainer__TechStack>h3 {
     font-family: Lumos;
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: relative;
     top: 15rem;
     margin-bottom: 1rem;
     text-align: center;
-    color: white;
+    color: #D7A257;
 }
 
 .about__LeftContainer__TechStackList {
