@@ -29,7 +29,7 @@
 }
 
 .contact__LeftContainer>img {
-    width: fill;
+    /* width: 100%; */
 }
 
 .contact__LeftContainer__Icon {
