@@ -12,6 +12,7 @@ function App() {
   return (
     <>
       <section className="App">
+        <div className="introContainer"></div>
         <div className="mainBody">
           <div className="NavigationPanel">
             <Navbar />

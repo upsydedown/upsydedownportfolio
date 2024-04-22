@@ -1,21 +1,19 @@
 .homeMain {
     height: 94dvh;
     overflow: hidden;
-    background-image: linear-gradient(
-        to top,
-        #1d1e23,
-        #1a1b22,
-        #161921,
-        #121620,
-        #0e131f,
-        #0c111e,
-        #0a0f1d,
-        #070d1c,
-        #070d1a,
-        #070c19,
-        #070c17,
-        #070b15
-    ) !important;
+    background-image: linear-gradient(to top,
+            #1d1e23,
+            #1a1b22,
+            #161921,
+            #121620,
+            #0e131f,
+            #0c111e,
+            #0a0f1d,
+            #070d1c,
+            #070d1a,
+            #070c19,
+            #070c17,
+            #070b15) !important;
 }
 
 .flex {
@@ -42,7 +40,7 @@
 .home__Image {
     position: relative;
     width: clamp(10rem, 55vw, 40rem);
-    animation: imageUpdown infinite alternate 3s ease-in-out;
+    animation: imageUpdown infinite alternate 5s ease-in-out;
     background-color: transparent;
     z-index: 5;
 }
@@ -55,7 +53,7 @@
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(to left, #9b7456, #e6d699, #9b7456),
         linear-gradient(to top, #9b7456, #e6d699, #9b7456);
-        background-size: 200% auto;
+    background-size: 200% auto;
     background-clip: text;
     animation: textclip 2s linear infinite;
 }
@@ -72,7 +70,7 @@
     flex-direction: column;
 }
 
-.home__HeadingTextContainer > h1 {
+.home__HeadingTextContainer>h1 {
     text-align: center;
 }
 
@@ -96,8 +94,8 @@
 
 .ring-container {
     position: absolute;
-    top: 50%;
-    left: 29%;
+    top: 55.5%;
+    left: 28.5%;
     /* overflow: hidden; */
     display: flex;
     align-items: center;
@@ -130,17 +128,12 @@
 
 @keyframes imageUpdown {
     0% {
-        transform: translateY(0);
-        /* Start at base position (no movement) */
-    }
-
-    50% {
         transform: translateY(-50px);
         /* Move the image up 50px */
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateY(50px);
         /* Return to base position */
     }
 }
@@ -168,6 +161,7 @@
 /* Responsive Adjustments (Optional) */
 
 @media (width < 768px) {
+
     /* Adjust styles for smaller screens (e.g., reduce ring size) */
     .ring {
         border-width: 3px;

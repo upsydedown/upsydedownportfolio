@@ -40,9 +40,33 @@
 
 .contact__RightContainer {
     flex: 0.5;
+    flex-flow: column wrap;
     /* background-color: blue; */
 }
 
-.contact__RightContainer>img {
-    width: fill;
+.contact__RightContainer>h2 {
+    font-family: "Macondo Swash Caps";
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.contact__RightContainer__btn {
+    flex-flow: column wrap;
+}
+
+.contact__RightContainer__btn>h1 {
+    position: absolute;
+    /* right: 18%; */
+    font-family: Parry Hotter;
+    /* background-color: red; */
+    color: white;
+    font-size: 5rem;
+    width: 12rem;
+    line-height: 120%;
+    text-align: center;
+}
+
+.contact__RightContainer__btn>img {
+    /* width: fill; */
 }

@@ -1,7 +1,11 @@
 import React from "react";
 
 const Button = () => {
-  return <div>Button</div>;
+  return (
+    <section className="introductoryScreen">
+      <div className="introductoryMain"></div>
+    </section>
+  );
 };
 
 export default Button;
