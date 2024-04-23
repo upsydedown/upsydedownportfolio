@@ -16,24 +16,24 @@ function App() {
 
   const handleUnlock = () => {
     setUnlocked(true);
-    setDisplayingUnlockMessage(true); // Show temporary unlock message
+    setDisplayingUnlockMessage(true);
   };
 
   useEffect(() => {
     if (displayingUnlockMessage) {
       const timeoutId = setTimeout(() => {
         setDisplayingUnlockMessage(false);
-      }, 5000); // Timeout after 5 seconds
+      }, 3000); // Timeout after 5 seconds
 
-      return () => clearTimeout(timeoutId); // Cleanup function for unmounting
+      return () => clearTimeout(timeoutId);
     }
-  }, [displayingUnlockMessage]); // Re-run useEffect on change of displayingUnlockMessage
+  }, [displayingUnlockMessage]);
 
   return (
     <>
       <section className="App">
         <div className="introMain">
-          {!unlocked && ( // Conditionally render content based on unlocked state
+          {!unlocked && (
             <div className="flex introMain__LockBody">
               <h1 className="animate__fadeInRight animate__delay-5s">
                 Ready to enter
@@ -43,7 +43,7 @@ function App() {
               </button>
             </div>
           )}
-          {displayingUnlockMessage && ( // Show temporary unlock message
+          {displayingUnlockMessage && (
             <div className="flex introMain__UnlockBody ">
               <h1 className="">Hello there</h1>
               <button disabled>
@@ -52,25 +52,24 @@ function App() {
             </div>
           )}
 
-          {unlocked &&
-            !displayingUnlockMessage && ( // Show main content after unlock
-              <div>
-                <div className="mainBody">
-                  <div className="NavigationPanel">
-                    <Navbar />
-                  </div>
-                  <div className="PagesPanel">
-                    <Routes>
-                      <Route path="/" element={<Home />} />
-                      <Route path="/about" element={<About />} />
-                      <Route path="/projects" element={<Project />} />
-                      <Route path="/play" element={<Play />} />
-                      <Route path="/contact" element={<Contact />} />
-                    </Routes>
-                  </div>
+          {unlocked && !displayingUnlockMessage && (
+            <div>
+              <div className="mainBody">
+                <div className="NavigationPanel">
+                  <Navbar />
+                </div>
+                <div className="PagesPanel">
+                  <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/projects" element={<Project />} />
+                    <Route path="/play" element={<Play />} />
+                    <Route path="/contact" element={<Contact />} />
+                  </Routes>
                 </div>
               </div>
-            )}
+            </div>
+          )}
         </div>
       </section>
     </>
