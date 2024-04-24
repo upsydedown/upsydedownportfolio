@@ -107,8 +107,6 @@
     left: 35%;
 }
 
-
-
 .about__LeftContainer__TechStack {
     flex-flow: column wrap;
 }
@@ -140,7 +138,7 @@
 .about__RightContainer__ParagraphBody {
     position: relative;
     top: -47.5rem;
-    left: 2.2rem;
+    left: 3.75rem;
     width: 20rem;
     background: none;
 }

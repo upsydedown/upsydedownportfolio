@@ -50,10 +50,40 @@
 }
 
 .bookStack {
+
     flex-flow: column wrap;
     position: absolute;
+
+    top: 25.5%;
     /* top: 10%; */
 
+}
+
+.bookStack1 {
+    align-items: baseline !important;
+}
+
+.bookStack2 {
+    position: relative;
+    top: -0.5rem;
+}
+
+.bookStack3 {
+    position: relative;
+    /* top: -0.5rem; */
+    align-items: baseline !important;
+}
+
+.books {
+    padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+    transition: all 0.25s ease-in;
+}
+
+.books:hover {
+    cursor: pointer;
+    -webkit-transform: translate(0, -5rem) !important;
+    -ms-transform: translate(0, -5rem) !important;
+    transform: translate(0, -5rem) !important;
 }
 
 .projects__CenterContainer>img {

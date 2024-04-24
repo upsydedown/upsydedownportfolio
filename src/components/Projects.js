@@ -14,34 +14,70 @@ const Projects = () => {
             <img src="./images/Projects/Shelf.png" alt="" srcset="" />
             <div className="flex bookStack">
               <div className="flex bookStack1">
-                <Icon style="" heading="" image="./images/Projects/1021.png" />
                 <Icon
-                  style=""
+                  style="books"
+                  heading=""
+                  image="./images/Projects/1021.png"
+                />
+                <Icon
+                  style="books"
                   heading=""
                   image="./images/Projects/linkedin.png"
                 />
                 <Icon
-                  style=""
+                  style="books"
                   heading=""
                   image="./images/Projects/aranieco.png"
                 />
               </div>
               <div className="flex bookStack2">
-                <Icon style="" heading="" image="./images/Projects/book1.png" />
-                <Icon style="" heading="" image="./images/Projects/book1.png" />
                 <Icon
-                  style=""
+                  style="books"
+                  heading=""
+                  image="./images/Projects/book1.png"
+                />
+                <Icon
+                  style="books"
+                  heading=""
+                  image="./images/Projects/book1.png"
+                />
+                <Icon
+                  style="books"
                   heading=""
                   image="./images/Projects/hemasource.png"
                 />
-                <Icon style="" heading="" image="./images/Projects/book1.png" />
-                <Icon style="" heading="" image="./images/Projects/book1.png" />
+                <Icon
+                  style="books"
+                  heading=""
+                  image="./images/Projects/book1.png"
+                />
+                <Icon
+                  style="books"
+                  heading=""
+                  image="./images/Projects/book1.png"
+                />
               </div>
               <div className="flex bookStack3">
-                <Icon style="" heading="" image="./images/Projects/book2.png" />
-                <Icon style="" heading="" image="./images/Projects/book2.png" />
-                <Icon style="" heading="" image="./images/Projects/book2.png" />
-                <Icon style="" heading="" image="./images/Projects/book2.png" />
+                <Icon
+                  style="books"
+                  heading=""
+                  image="./images/Projects/book2.png"
+                />
+                <Icon
+                  style="books"
+                  heading=""
+                  image="./images/Projects/book2.png"
+                />
+                <Icon
+                  style="books"
+                  heading=""
+                  image="./images/Projects/book2.png"
+                />
+                <Icon
+                  style="books"
+                  heading=""
+                  image="./images/Projects/book2.png"
+                />
               </div>
             </div>
           </div>
