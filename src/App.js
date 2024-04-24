@@ -35,19 +35,16 @@ function App() {
         <div className="introMain">
           {!unlocked && (
             <div className="flex introMain__LockBody">
-              <h1 className="animate__fadeInRight animate__delay-5s">
-                Ready to enter
-              </h1>
-              <button onClick={handleUnlock}>
-                <i className="fas fa-lock"></i> Unlock
+              <button className="btn1" onClick={handleUnlock}>
+                <i className="fas fa-lock"></i> Alohamora
               </button>
             </div>
           )}
           {displayingUnlockMessage && (
             <div className="flex introMain__UnlockBody ">
-              <h1 className="">Hello there</h1>
+              <h1 className="">Welcome to the magical world of code!</h1>
               <button disabled>
-                <i className="fi fi-rs-user"></i> Unlocked
+                <i className="fi fi-rs-user"></i> Disenchanted
               </button>
             </div>
           )}

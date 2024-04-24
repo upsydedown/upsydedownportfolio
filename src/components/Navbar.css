@@ -26,7 +26,20 @@
     margin: 0.75rem 0.5rem 0.75rem 0.5rem;
 }
 
-.logo>a,
+.logo>a {
+    font-family: Parry Hotter;
+    font-size: 1rem;
+    text-decoration: none;
+    background-blend-mode: multiply;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to left, #9b7456, #e6d699, #9b7456),
+        linear-gradient(to top, #9b7456, #e6d699, #9b7456);
+    background-size: 200% auto;
+    background-clip: text;
+    animation: textclip 2s linear infinite;
+}
+
 .navMenu>li>a {
 
     font-family: Lumos;

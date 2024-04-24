@@ -7,6 +7,10 @@
 
 .introMain__LockBody>h1,
 .introMain__UnlockBody>h1 {
+    font-family: "Macondo Swash Caps";
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
     color: white;
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -14,15 +18,32 @@
 
 .introMain__LockBody>button,
 .introMain__UnlockBody>button {
+    font-family: Parry Hotter;
+    font-size: 1.5rem;
+    /* line-height: 4rem; */
+    /* width: fit-content; */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 0rem 2rem 0rem 2rem;
     border: none;
     border-radius: 5px;
     /* background-color: #333; */
     color: #000000;
     cursor: pointer;
+    background-blend-mode: multiply;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to left, #9b7456, #e6d699, #9b7456),
+        linear-gradient(to top, #9b7456, #e6d699, #9b7456);
+    background-size: 200% auto;
+    background-clip: text;
+    animation: textclip 2s linear infinite;
+    animation: imageUpdown infinite alternate 2s ease-in-out;
+}
+
+.btn1 {
+    font-size: 2.5rem !important;
 }
 
 .introMain__UnlockBody>button i {
@@ -32,4 +53,17 @@
 .introMain__UnlockBody {
     height: 100dvh;
     flex-flow: column wrap;
+}
+
+
+@keyframes imageUpdown {
+    0% {
+        transform: translateY(-50px);
+        /* Move the image up 50px */
+    }
+
+    100% {
+        transform: translateY(50px);
+        /* Return to base position */
+    }
 }
