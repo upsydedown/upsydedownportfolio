@@ -38,8 +38,7 @@
         linear-gradient(to top, #9b7456, #e6d699, #9b7456);
     background-size: 200% auto;
     background-clip: text;
-    animation: textclip 2s linear infinite;
-    animation: imageUpdown infinite alternate 2s ease-in-out;
+    animation: textclip 2s linear infinite, imageUpdown infinite alternate 2s ease-in-out;
 }
 
 .btn1 {

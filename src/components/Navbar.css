@@ -21,7 +21,6 @@
 
 .logo,
 .navMenu>li {
-
     list-style: none;
     margin: 0.75rem 0.5rem 0.75rem 0.5rem;
 }
@@ -44,7 +43,7 @@
 
     font-family: Lumos;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 1.25vw, 4rem);
     color: #d7a257;
     text-align: center;
     text-decoration: none;
@@ -62,6 +61,8 @@
     background-color: #d7a257;
     color: #070b15 !important;
 }
+
+@media (width < 1210px) {}
 
 @media (max-width: 480px) {
     .navBody {

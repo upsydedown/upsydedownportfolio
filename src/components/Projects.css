@@ -1,5 +1,6 @@
 .projectsMain {
-    height: 100dvh;
+    height: 90dvh;
+    width: 100dvw;
     overflow: hidden;
     background-image: radial-gradient(ellipse,
             #1d1e23,

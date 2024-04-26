@@ -1,5 +1,6 @@
 .homeMain {
-    height: 94dvh;
+    height: 92dvh;
+    width: 100dvw;
     overflow: hidden;
     background-image: linear-gradient(to top,
             #1d1e23,
@@ -39,8 +40,8 @@
 
 .home__Image {
     position: relative;
-    width: clamp(10rem, 55vw, 40rem);
-    animation: imageUpdown infinite alternate 5s ease-in-out;
+    width: clamp(10rem, 40vw, 40rem);
+    /* animation: imageUpdown infinite alternate 5s ease-in-out; */
     background-color: transparent;
     z-index: 5;
 }
@@ -82,7 +83,7 @@
 
 .cap {
     font-family: "Lumos";
-    font-size: 2.2rem;
+    font-size: clamp(1rem, 1.95vw, 4rem);
     color: #d7a257;
 }
 
@@ -160,15 +161,30 @@
 
 /* Responsive Adjustments (Optional) */
 
-@media (width < 768px) {
-
-    /* Adjust styles for smaller screens (e.g., reduce ring size) */
-    .ring {
-        border-width: 3px;
-    }
+@media (width < 1210px) {
 
     .homeBody {
-        flex-flow: column wrap;
-        justify-content: center;
+        gap: 2rem;
+        justify-content: space-evenly !important;
     }
+
+    .home__HeaderText {
+        font-size: 3.5em;
+    }
+
+    .ring-container {
+        top: 58%;
+        left: 32%;
+    }
+
+    .ring-1 {
+        width: 15.5rem;
+        height: 31rem;
+    }
+
+    .ring-2 {
+        width: 16.5rem;
+        height: 33rem;
+    }
+
 }
