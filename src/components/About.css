@@ -1,19 +1,19 @@
 .aboutMain {
-    height: 92dvh;
-    /* overflow: hidden; */
+    height: 107dvh;
+    overflow: hidden;
     /* margin-top: 2rem; */
-    background-image: radial-gradient(ellipse,
+    background-image: linear-gradient(to top,
             #1d1e23,
-            #1a1b20,
-            #16181e,
-            #13151b,
-            #0f1119,
-            #0d0f18,
-            #0a0d16,
-            #070b15,
-            #070b15,
-            #070b15,
-            #070b15,
+            #1a1b22,
+            #161921,
+            #121620,
+            #0e131f,
+            #0c111e,
+            #0a0f1d,
+            #070d1c,
+            #070d1a,
+            #070c19,
+            #070c17,
             #070b15) !important;
 }
 

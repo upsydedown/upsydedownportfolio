@@ -36,7 +36,8 @@ function App() {
           {!unlocked && (
             <div className="flex introMain__LockBody">
               <button className="btn1" onClick={handleUnlock}>
-                <i className="fas fa-lock"></i> Alohamora
+              <img src="./images/Fireball.gif" alt="" srcset="" />
+                <i className="fas fa-lock"></i> Alohomora
               </button>
             </div>
           )}

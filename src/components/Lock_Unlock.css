@@ -34,15 +34,21 @@
     background-blend-mode: multiply;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to left, #9b7456, #e6d699, #9b7456),
-        linear-gradient(to top, #9b7456, #e6d699, #9b7456);
+    background-image: linear-gradient(to left, #84522D, #C9A677, #84522D),
+        linear-gradient(to top, #84522D, #C9A677, #84522D);
     background-size: 200% auto;
     background-clip: text;
     animation: textclip 2s linear infinite, imageUpdown infinite alternate 2s ease-in-out;
 }
 
 .btn1 {
-    font-size: 2.5rem !important;
+    font-size: 4.5rem !important;
+}
+
+.btn1>img {
+    position: absolute;
+    background-color: transparent;
+
 }
 
 .introMain__UnlockBody>button i {
