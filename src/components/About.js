@@ -45,35 +45,29 @@ const About = () => {
               />
             </div>
             <div className="flex about__LeftContainer__TechStack">
-              <h3>Under the Alchemist's Toolbelt</h3>
               <div className="flex about__LeftContainer__TechStackList">
-                <Icon
-                  // heading="FireBase"
-                  image="./images/About/Secondary/firebase.png"
-                />
-                <Icon
-                  // heading="Figma"
-                  image="./images/About/Secondary/figma.png"
-                />
-                <Icon
-                  // heading="Framer"
-                  image="./images/About/Secondary/framer.png"
-                />
-                <Icon
-                  // heading="WebFlow"
-                  image="./images/About/Secondary/webflow.png"
-                />
-                <Icon
-                  // heading="Vercel"
-                  image="./images/About/Secondary/vercel.png"
-                />
-                <Icon
-                  // heading="Java"
-                  image="./images/About/Secondary/java.png"
-                />
-                <Icon 
-                // heading="MUI" 
-                image="./images/About/Secondary/MUI.png" />
+                <h3>Under the Alchemist's Toolbelt</h3>
+                <div className="flex about__LeftContainer__TechStackList__Icons">
+                  <Icon
+                    heading=""
+                    image="./images/About/Secondary/firebase.png"
+                  />
+                  <Icon heading="" image="./images/About/Secondary/figma.png" />
+                  <Icon
+                    heading=""
+                    image="./images/About/Secondary/framer.png"
+                  />
+                  <Icon
+                    heading=""
+                    image="./images/About/Secondary/webflow.png"
+                  />
+                  <Icon
+                    heading=""
+                    image="./images/About/Secondary/vercel.png"
+                  />
+                  <Icon heading="" image="./images/About/Secondary/java.png" />
+                  <Icon heading="" image="./images/About/Secondary/MUI.png" />
+                </div>
               </div>
             </div>
           </div>
