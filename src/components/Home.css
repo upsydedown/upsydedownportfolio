@@ -1,6 +1,6 @@
 .homeMain {
     height: 92dvh;
-    width: 100dvw;
+    width: 100%;
     overflow: hidden;
     background-image: linear-gradient(to top,
             #1d1e23,
@@ -24,7 +24,7 @@
 .homeBody {
     justify-content: space-around;
     align-items: center;
-    flex-flow: row;
+    flex-flow: row wrap;
     height: 100%;
     margin: 0 10% 0 10%;
     padding: 2rem;
@@ -95,8 +95,8 @@
 
 .ring-container {
     position: absolute;
-    top: 55.5%;
-    left: 28.5%;
+    top: clamp(15rem, 45vw, 33rem);
+    left: clamp(13rem, 50vw, 34.5rem);
     /* overflow: hidden; */
     display: flex;
     align-items: center;
@@ -114,15 +114,15 @@
 }
 
 .ring-1 {
-    width: 20rem;
-    height: 40rem;
+    width: clamp(10rem, 20vw, 20rem);
+    height: clamp(20rem, 40vw, 40rem);
     animation-name: spinClockwise;
     animation-duration: 10s;
 }
 
 .ring-2 {
-    width: 22.5rem;
-    height: 45rem;
+    width: clamp(10rem, 20vw, 20rem);
+    height: clamp(20rem, 40vw, 40rem);
     animation-name: spinCounterClockwise;
     animation-duration: 15s;
 }
@@ -172,6 +172,38 @@
         font-size: 3.5em;
     }
 
+    /* 
+    .ring-container {
+        top: 58%;
+        left: 32%;
+    }
+
+    
+    .ring-1 {
+        width: 15.5rem;
+        height: 31rem;
+    }
+
+    .ring-2 {
+        width: 16.5rem;
+        height: 33rem;
+    } */
+
+}
+
+@media (width < 485px) {
+
+    .homeBody {
+        gap: 2rem;
+        flex-flow: column wrap;
+        justify-content: space-evenly !important;
+    }
+
+    .home__HeaderText {
+        font-size: 3.5em;
+    }
+
+    /* 
     .ring-container {
         top: 58%;
         left: 32%;
@@ -185,6 +217,6 @@
     .ring-2 {
         width: 16.5rem;
         height: 33rem;
-    }
+    } */
 
 }
