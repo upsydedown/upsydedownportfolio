@@ -2,19 +2,19 @@
     height: 107dvh;
     overflow: hidden;
     /* margin-top: 2rem; */
-    background-image: linear-gradient(to top,
-            #1d1e23,
-            #1a1b22,
-            #161921,
-            #121620,
-            #0e131f,
-            #0c111e,
-            #0a0f1d,
-            #070d1c,
-            #070d1a,
-            #070c19,
-            #070c17,
-            #070b15) !important;
+    background-image: linear-gradient(to right top,
+            #1b1d24,
+            #1d1e27,
+            #191d25,
+            #131722,
+            #070b15,
+            #070b15,
+            #070b15,
+            #070b15,
+            #070b15,
+            #070b15,
+            #070b15,
+            #070b15) !important; 
 }
 
 .aboutBody {
@@ -55,6 +55,7 @@
 .about__LeftContainer__HexagonalGridHeading>h1 {
     font-family: Parry Hotter;
     font-size: 3rem;
+    font-weight: 300;
     background-blend-mode: multiply;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(to left, #9b7456, #e6d699, #9b7456),
@@ -77,6 +78,14 @@
 
 .Hex>img {
     width: 12rem;
+}
+
+.Hex>h5 {
+    font-size: 1.2rem;
+    font-family: 'macondo swash caps';
+    color: #D7A257;
+    text-align: center;
+    font-weight: 300;
 }
 
 .Hex:nth-child(7) {
@@ -148,8 +157,10 @@
     font-weight: 700;
     font-style: normal;
     font-size: 1.5rem;
+    color: #805D21;
     background-color: transparent;
     margin-bottom: 1rem;
+    text-shadow: 0px 2px 4px #85765B;
 }
 
 .about__RightContainer__ParagraphBody>p {
@@ -158,4 +169,6 @@
     font-style: normal;
     background-color: transparent;
     font-size: 0.9rem;
+    color: #18120F;
+    text-shadow: 0px 2px 4px #85765B
 }
