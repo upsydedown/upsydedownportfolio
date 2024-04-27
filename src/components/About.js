@@ -15,32 +15,32 @@ const About = () => {
               </div>
               <Icon
                 style="Hex"
-                heading=""
+                heading="HTML"
                 image="./images/About/Hexagon/HTML_logo.png"
               />
               <Icon
                 style="Hex"
-                heading=""
+                heading="CSS"
                 image="./images/About/Hexagon/CSS_logo.png"
               />
               <Icon
                 style="Hex"
-                heading=""
+                heading="JavaScript"
                 image="./images/About/Hexagon/JavaScript_logo.png"
               />
               <Icon
                 style="Hex"
-                heading=""
+                heading="React"
                 image="./images/About/Hexagon/React_logo.png"
               />
               <Icon
                 style="Hex"
-                heading=""
+                heading="Next"
                 image="./images/About/Hexagon/Next.js_logo.png"
               />
               <Icon
                 style="Hex"
-                heading=""
+                heading="Redux"
                 image="./images/About/Hexagon/Redux_logo.png"
               />
             </div>
@@ -48,30 +48,32 @@ const About = () => {
               <h3>Under the Alchemist's Toolbelt</h3>
               <div className="flex about__LeftContainer__TechStackList">
                 <Icon
-                  heading="FireBase"
+                  // heading="FireBase"
                   image="./images/About/Secondary/firebase.png"
                 />
                 <Icon
-                  heading="Figma"
+                  // heading="Figma"
                   image="./images/About/Secondary/figma.png"
                 />
                 <Icon
-                  heading="Framer"
+                  // heading="Framer"
                   image="./images/About/Secondary/framer.png"
                 />
                 <Icon
-                  heading="WebFlow"
+                  // heading="WebFlow"
                   image="./images/About/Secondary/webflow.png"
                 />
                 <Icon
-                  heading="Vercel"
+                  // heading="Vercel"
                   image="./images/About/Secondary/vercel.png"
                 />
                 <Icon
-                  heading="Java"
+                  // heading="Java"
                   image="./images/About/Secondary/java.png"
                 />
-                <Icon heading="MUI" image="./images/About/Secondary/MUI.png" />
+                <Icon 
+                // heading="MUI" 
+                image="./images/About/Secondary/MUI.png" />
               </div>
             </div>
           </div>

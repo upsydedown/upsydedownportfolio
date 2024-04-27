@@ -28,7 +28,7 @@ const Contact = () => {
         <div className="flex contact__RightContainer">
           <h2>Ready for your Patronus Project</h2>
           <div className="flex contact__RightContainer__btn">
-            <h1>Send an Owl</h1>
+            <h1>Send <br/> an <br/> Owl</h1>
             <img
               className="orb"
               src="./images/Contact/orb.png"

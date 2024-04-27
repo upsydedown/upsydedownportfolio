@@ -41,7 +41,7 @@
 .home__Image {
     position: relative;
     width: clamp(10rem, 40vw, 40rem);
-    /* animation: imageUpdown infinite alternate 5s ease-in-out; */
+    animation: imageUpdown infinite alternate 5s ease-in-out;
     background-color: transparent;
     z-index: 5;
 }
@@ -49,6 +49,7 @@
 .home__HeaderText {
     font-family: Parry Hotter;
     font-size: 5.5em;
+    font-weight: 300;
     background-blend-mode: multiply;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

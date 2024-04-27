@@ -8,18 +8,18 @@
 .introMain__LockBody>h1,
 .introMain__UnlockBody>h1 {
     font-family: "Macondo Swash Caps";
-    font-size: 2rem;
     font-weight: 400;
     font-style: normal;
-    color: white;
-    font-size: 3rem;
+    color: #D7A257;
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
 
 .introMain__LockBody>button,
 .introMain__UnlockBody>button {
     font-family: Parry Hotter;
-    font-size: 1.5rem;
+    font-size: 4.5rem;
+    font-weight: 300;
     /* line-height: 4rem; */
     /* width: fit-content; */
     display: flex;
@@ -29,7 +29,7 @@
     border: none;
     border-radius: 5px;
     /* background-color: #333; */
-    color: #000000;
+    /* color: #000000; */
     cursor: pointer;
     background-blend-mode: multiply;
     -webkit-background-clip: text;
@@ -43,6 +43,7 @@
 
 .btn1 {
     font-size: 4.5rem !important;
+    font-weight: 300;
 }
 
 .btn1>img {
