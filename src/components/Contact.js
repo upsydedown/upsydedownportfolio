@@ -26,7 +26,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex contact__RightContainer">
-          <h2>Ready for your Patronus Project</h2>
+          <h2>Ready for your Patronus Project?</h2>
           <div className="flex contact__RightContainer__btn">
             <h1>
               Send <br /> an <br /> Owl

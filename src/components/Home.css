@@ -87,7 +87,8 @@
 .cap {
     font-family: "Lumos";
     font-size: clamp(1.25rem, 1.95vw, 4rem);
-    color: #d7a257;
+    color: #b88a4b;
+    font-weight: 400;
 }
 
 .bar {

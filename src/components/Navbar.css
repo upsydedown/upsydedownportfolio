@@ -29,6 +29,7 @@
     font-family: Parry Hotter;
     font-size: 1.4rem;
     text-decoration: none;
+    font-weight: 600;
     background-blend-mode: multiply;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -42,9 +43,9 @@
 .navMenu>li>a {
 
     font-family: Lumos;
-    font-weight: 600;
+    font-weight: 400;
     font-size: clamp(1rem, 1.25vw, 4rem);
-    color: #d7a257;
+    color: #9b7456;
     text-align: center;
     text-decoration: none;
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
@@ -53,13 +54,24 @@
 
 .navMenu li a:not(.active):hover,
 .navMenu li a:not(.active):focus {
-    border-bottom: 1px solid #d7a257;
+    /* border-bottom: 1px solid #d7a257; */
+    font-weight: 600;
     background-color: transparent;
 }
 
 .active {
-    background-color: #d7a257;
-    color: #070b15 !important;
+    text-shadow: 2px 2px 20px #d7a257;
+    /* background-color: #d7a257; */
+    /* color: #d7a257 !important; */
+    font-weight: 600;
+    background-blend-mode: multiply;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to left, #d7a257, #e6d699, #d7a257),
+        linear-gradient(to top, #d7a257, #e6d699, #d7a257);
+    background-size: 200% auto;
+    background-clip: text;
+    animation: textclip 4s linear infinite;
 }
 
 @media (width < 1210px) {}
