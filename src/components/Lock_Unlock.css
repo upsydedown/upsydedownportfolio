@@ -38,7 +38,7 @@
         linear-gradient(to top, #84522D, #C9A677, #84522D);
     background-size: 200% auto;
     background-clip: text;
-    animation: textclip 2s linear infinite, imageUpdown infinite alternate 2s ease-in-out;
+    animation: textclip 2s linear infinite, imageUpdown_lockUnlock infinite alternate 2s ease-in-out;
 }
 
 .btn1 {
@@ -62,14 +62,14 @@
 }
 
 
-@keyframes imageUpdown {
+@keyframes imageUpdown_lockUnlock {
     0% {
-        transform: translateY(-50px);
+        transform: translateY(-20px);
         /* Move the image up 50px */
     }
 
     100% {
-        transform: translateY(50px);
+        transform: translateY(20px);
         /* Return to base position */
     }
 }

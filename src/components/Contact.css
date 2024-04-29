@@ -1,6 +1,6 @@
 .contactMain {
-    height: 100dvh;
-    /* overflow: hidden; */
+    height: 94dvh;
+    overflow: hidden;
     background-image: radial-gradient(ellipse,
             #1d1e23,
             #1a1b20,
@@ -18,17 +18,16 @@
 
 .contactBody {
     gap: 1rem;
-    /* margin: 0 10% 0 10%; */
-    /* background-color: red; */
 }
 
 .contact__LeftContainer {
     flex-direction: column wrap;
     flex: 0.5;
-    /* background-color: yellow; */
+
 }
 
 .contact__LeftContainer>img {
+
     /* width: 100%; */
 }
 
@@ -38,13 +37,34 @@
     align-items: flex-end;
 }
 
+.tree_icon {
+    cursor: pointer;
+    position: relative;
+    animation: expand-shrink 2s ease-in-out infinite alternate;
+}
+
+.tree_icon:nth-child(1) {
+    animation-delay: 2s;
+    top: 25rem;
+    left: -3rem;
+}
+
+.tree_icon:nth-child(3) {
+    animation-delay: 3s;
+    top: 25rem;
+    left: 3rem;
+}
+
 .contact__RightContainer {
     flex: 0.5;
     flex-flow: column wrap;
-    /* background-color: blue; */
+
 }
 
 .contact__RightContainer>h2 {
+    position: relative;
+    top: 4rem;
+    right: -2rem;
     font-family: "Macondo Swash Caps";
     font-weight: 400;
     font-style: normal;
@@ -56,6 +76,7 @@
 }
 
 .contact__RightContainer__btn>h1 {
+    z-index: 1;
     position: absolute;
     right: 18%;
     font-family: Parry Hotter;
@@ -71,6 +92,18 @@
 }
 
 .contact__RightContainer__btn>img {
-    /* width: fill; */
-    /* mix-blend-mode:; */
+    width: 100%;
+    animation: expandShrink_contact 2s ease-in-out infinite alternate;
+}
+
+@keyframes expandShrink_contact {
+    from {
+        transform: scale(1);
+
+    }
+
+    to {
+        transform: scale(1.05);
+
+    }
 }
