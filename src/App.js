@@ -23,7 +23,7 @@ function App() {
     if (displayingUnlockMessage) {
       const timeoutId = setTimeout(() => {
         setDisplayingUnlockMessage(false);
-      }, 3000); // Timeout after 5 seconds
+      }, 4000);
 
       return () => clearTimeout(timeoutId);
     }
@@ -36,7 +36,7 @@ function App() {
           {!unlocked && (
             <div className="flex introMain__LockBody">
               <button className="btn1" onClick={handleUnlock}>
-              <img src="./images/Fireball.gif" alt="" srcset="" />
+                <img src="./images/Fireball.gif" alt="" srcset="" />
                 <i className="fas fa-lock"></i> Alohomora
               </button>
             </div>

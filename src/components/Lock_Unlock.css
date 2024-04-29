@@ -3,6 +3,17 @@
 .introMain__LockBody {
     flex-flow: column wrap;
     height: 100dvh;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInZoom 1s ease-in-out forwards;
+}
+
+.introMain__UnlockBody {
+    flex-flow: column wrap;
+    height: 100dvh;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInZoom 1s ease-in-out forwards;
 }
 
 .introMain__LockBody>h1,
@@ -20,16 +31,12 @@
     font-family: Parry Hotter;
     font-size: 4.5rem;
     font-weight: 300;
-    /* line-height: 4rem; */
-    /* width: fit-content; */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0rem 2rem 0rem 2rem;
     border: none;
     border-radius: 5px;
-    /* background-color: #333; */
-    /* color: #000000; */
     cursor: pointer;
     background-blend-mode: multiply;
     -webkit-background-clip: text;
@@ -49,7 +56,6 @@
 .btn1>img {
     position: absolute;
     background-color: transparent;
-
 }
 
 .introMain__UnlockBody>button i {
@@ -61,15 +67,35 @@
     flex-flow: column wrap;
 }
 
+.introMain {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.unlocked .introMain {
+    opacity: 0;
+}
 
 @keyframes imageUpdown_lockUnlock {
     0% {
         transform: translateY(-20px);
-        /* Move the image up 50px */
+
     }
 
     100% {
         transform: translateY(20px);
-        /* Return to base position */
+
+    }
+}
+
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
     }
 }

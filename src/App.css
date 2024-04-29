@@ -7,7 +7,6 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-
 }
 
 .PagesPanel {
@@ -15,7 +14,6 @@
     margin: 0rem;
     padding: 0rem;
     flex-flow: column wrap;
-
 }
 
 .flex {
