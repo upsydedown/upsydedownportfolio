@@ -40,20 +40,27 @@
 
 .projects__LeftContainer>img {
     width: clamp(20rem, 45vw, 100rem);
+    animation: rotate 5s ease-in-out infinite alternate;
 }
 
 .projects__CenterContainer {
     position: relative;
+    transform: rotateZ(180deg);
     left: -1rem;
     flex: 0.3;
     z-index: 0;
+    transition: all 5s ease-in-out;
+}
+
+.projects__CenterContainer:hover {
+    transform: rotateZ(0deg);
 }
 
 .bookStack {
 
     flex-flow: column wrap;
     position: absolute;
-
+    left: 32%;
     top: 25.5%;
     /* top: 10%; */
 
@@ -77,6 +84,7 @@
 .books {
     padding: 0.5rem 0.25rem 0.5rem 0.25rem;
     transition: all 0.25s ease-in;
+    /* animation-delay: 5s; */
 }
 
 .books:hover {
@@ -99,4 +107,15 @@
 
 .projects__RightContainer>img {
     width: clamp(20rem, 45vw, 100rem);
+    animation: rotate 5s ease-in-out infinite alternate;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(-2deg);
+    }
+
+    to {
+        transform: rotateZ(7deg);
+    }
 }

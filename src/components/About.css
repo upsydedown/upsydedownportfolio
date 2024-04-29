@@ -30,8 +30,6 @@
 }
 
 .about__LeftContainer__HexagonalGrid {
-    /* background-color: red; */
-    /* height: 100rem; */
     flex-flow: column wrap;
     width: 100%;
 }
@@ -43,8 +41,8 @@
 }
 
 .about__LeftContainer__HexagonalGridHeading {
-    top: -16rem;
-    left: 2rem;
+    top: clamp(-20rem, -10vw, -16rem);
+    left: clamp(0rem, 5vw, 2rem);
     flex-flow: column wrap;
     z-index: 1;
 }
@@ -76,17 +74,17 @@
     left: 20%;
 }
 
-.Hex>img {
+.Hex>a>img {
     animation: imageUpdown_about infinite alternate 5s ease-in-out;
-    width: 12rem;
+    width: clamp(5rem, 12vw, 12rem);
 }
 
-.Hex>img:hover {
+.Hex>a>img:hover {
     cursor: pointer;
     animation: bounce-spin 1s ease-in-out;
 }
 
-.Hex>h5 {
+.Hex>a>h5 {
     font-size: 1.2rem;
     font-family: 'macondo swash caps';
     color: #D7A257;
@@ -140,7 +138,6 @@
 }
 
 .about__RightContainer {
-
     flex: 0.5;
     flex-flow: column wrap;
 }
@@ -211,3 +208,5 @@
         transform: scale(1.1);
     }
 }
+
+@media (width < 1210px) {}
