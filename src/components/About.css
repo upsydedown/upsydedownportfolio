@@ -1,5 +1,5 @@
 .aboutMain {
-    height: 112dvh;
+    height: 114dvh;
     overflow: hidden;
     /* margin-top: 2rem; */
     background-image: linear-gradient(to right top,
@@ -41,8 +41,8 @@
 }
 
 .about__LeftContainer__HexagonalGridHeading {
-    top: clamp(-20rem, -10vw, -16rem);
-    left: clamp(0rem, 5vw, 2rem);
+    top: -16rem;
+    left: 4rem;
     flex-flow: column wrap;
     z-index: 1;
 }
@@ -50,7 +50,7 @@
 .about__LeftContainer__HexagonalGridHeading>h3 {
     color: #D7A257;
     font-family: "Macondo Swash Caps";
-    font-size: 2rem;
+    font-size: clamp(1rem, 2vw, 2rem);
     font-weight: 400;
     font-style: normal;
     animation: expand-shrink 2s ease-in-out infinite alternate;
@@ -58,7 +58,7 @@
 
 .about__LeftContainer__HexagonalGridHeading>h1 {
     font-family: Parry Hotter;
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 3vw, 3rem);
     font-weight: 300;
     background-blend-mode: multiply;
     -webkit-text-fill-color: transparent;
@@ -76,13 +76,12 @@
 
 .Hex>a>img {
     animation: imageUpdown_about infinite alternate 5s ease-in-out;
-    width: clamp(5rem, 12vw, 12rem);
+    width: clamp(5rem, 12vw, 18rem);
 
 }
 
 .Hex>a>img:hover {
     cursor: pointer;
-
     animation: bounce-spin 1s ease-in-out;
 }
 
@@ -128,13 +127,13 @@
 
 .about__LeftContainer__TechStackList {
     flex-flow: column wrap;
-    top: 9rem;
-    left: 2rem;
+    top: 10rem;
+    left: 4rem;
 }
 
 .about__LeftContainer__TechStackList>h3 {
     font-family: Lumos;
-    font-size: 2rem;
+    font-size: clamp(1rem, 2vw, 2rem);
     text-align: center;
     color: #D7A257;
 }
@@ -145,14 +144,14 @@
 }
 
 .about__RightContainer>img {
-    height: clamp(45rem, 50vw, 65rem);
+    height: clamp(35rem, 55vw, 75rem);
 }
 
 .about__RightContainer__ParagraphBody {
     position: relative;
-    top: clamp(-44.5rem, -47vw, -32.5rem);
-    left: clamp(2.75rem, 3.75vw, 3.75rem);
-    width: clamp(12rem, 15vw, 20rem);
+    top: -48rem;
+    left: 3.75rem;
+    width: 20rem;
     background: none;
 }
 
@@ -172,7 +171,7 @@
     font-weight: 400;
     font-style: normal;
     background-color: transparent;
-    font-size: clamp(0.7rem, 0.9vw, 0.9rem);
+    font-size: 0.9rem;
     color: #18120F;
     text-shadow: 0px 2px 4px #85765B
 }
@@ -211,4 +210,49 @@
     }
 }
 
-@media (width < 1210px) {}
+@media (width < 1210px) {
+    .aboutMain {
+        height: 95dvh;
+    }
+
+    .about__LeftContainer__HexagonalGridHeading {
+        top: -10rem;
+        left: 4rem;
+        flex-flow: column wrap;
+        z-index: 1;
+    }
+
+    .Hex:nth-child(4),
+    .Hex:nth-child(5) {
+        top: 55%;
+    }
+
+    .Hex:nth-child(6) {
+        top: 70%;
+    }
+
+    .about__LeftContainer__TechStackList {
+        top: 6rem;
+        left: 4.5rem;
+    }
+
+    .about__RightContainer>img {
+        height: 45rem;
+    }
+
+    .about__RightContainer__ParagraphBody {
+        position: relative;
+        top: -32rem;
+        left: 2.75rem;
+        width: 12rem;
+    }
+
+    .about__RightContainer__ParagraphBody>h1 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .about__RightContainer__ParagraphBody>p {
+        font-size: 0.65rem;
+    }
+}

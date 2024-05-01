@@ -33,20 +33,20 @@
 
 .projects__LeftContainer {
     position: relative;
-    left: clamp(10rem, 25vw, 28rem);
+    left: clamp(24rem, 24vw, 28rem);
     flex: 0.3;
     z-index: 1;
 }
 
 .projects__LeftContainer>img {
-    width: clamp(20rem, 45vw, 100rem);
+    width: clamp(45rem, 45vw, 100rem);
     animation: rotate 5s ease-in-out infinite alternate;
 }
 
 .projects__CenterContainer {
     position: relative;
     transform: rotateZ(180deg);
-    left: 1rem;
+    left: -0.75rem;
     flex: 0.3;
     z-index: 0;
     transition: all 5s ease-in-out;
@@ -57,13 +57,11 @@
 }
 
 .bookStack {
-
     flex-flow: column wrap;
     position: absolute;
     left: 32%;
     top: 25.5%;
     /* top: 10%; */
-
 }
 
 .bookStack1 {
@@ -77,9 +75,7 @@
 
 .bookStack3 {
     position: relative;
-    /* top: -0.5rem; */
     align-items: baseline !important;
-    transition-delay: 5s;
 }
 
 .books {
@@ -96,19 +92,19 @@
 }
 
 .projects__CenterContainer>img {
-    width: clamp(50rem, 75vw, 100rem);
+    width: clamp(73rem, 73vw, 100rem);
 }
 
 .projects__RightContainer {
     position: relative;
-    right: clamp(10rem, 25vw, 28rem);
+    right: clamp(24rem, 24vw, 28rem);
     flex: 0.3;
     z-index: 1;
 }
 
 .projects__RightContainer>img {
-    width: clamp(20rem, 45vw, 100rem);
-    animation: rotate 5s ease-in-out 5s infinite alternate;
+    width: clamp(45rem, 45vw, 100rem);
+    animation: rotate 5s ease-in-out -5s infinite alternate;
 }
 
 @keyframes rotate {
@@ -118,5 +114,27 @@
 
     to {
         transform: rotateZ(7deg);
+    }
+}
+
+@media (width < 1210px) {
+    .bookStack {
+        /* background-color: red; */
+        width: 30rem;
+        left: 30.5%;
+        top: 27.5%;
+    }
+
+    .bookStack2 {
+        position: relative;
+        top: -1.75rem;
+    }
+
+    .bookStack3 {
+        top: -2.75rem;
+    }
+
+    .bookStack1>.books>a>img {
+        width: 80%;
     }
 }
