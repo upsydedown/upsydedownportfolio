@@ -71,7 +71,19 @@
         linear-gradient(to top, #d7a257, #e6d699, #d7a257);
     background-size: 200% auto;
     background-clip: text;
-    animation: textclip 4s linear infinite;
+    animation: textclip 4s linear infinite, imageUpdown_Navbar infinite alternate 1s ease-in-out;
+}
+
+@keyframes imageUpdown_Navbar {
+    0% {
+        transform: translateY(-5px);
+
+    }
+
+    100% {
+        transform: translateY(5px);
+
+    }
 }
 
 @media (width < 1210px) {}
@@ -123,4 +135,6 @@
             transform: translateY(-100%);
         }
     }
+
+
 }

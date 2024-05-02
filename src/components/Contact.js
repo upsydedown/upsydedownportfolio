@@ -28,11 +28,12 @@ const Contact = () => {
         <div className="flex contact__RightContainer">
           <h2>Ready for your Patronus Project?</h2>
           <div className="flex contact__RightContainer__btn">
-            <h1>
+            <h1 className="animate__animated animate__fadeIn">
+              <button className="contact__RightContainer__btnContainer"></button>
               Send <br /> an <br /> Owl
             </h1>
             <img
-              className="orb"
+              className="orb "
               src="./images/Contact/orb.png"
               alt=""
               srcset=""

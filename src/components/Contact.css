@@ -1,5 +1,5 @@
 .contactMain {
-    height: 94dvh;
+    height: 90dvh;
     overflow: hidden;
     background-image: radial-gradient(ellipse,
             #1d1e23,
@@ -27,8 +27,8 @@
 }
 
 .contact__LeftContainer>img {
-
-    /* width: 100%; */
+    width: 95%;
+    animation: expandShrink_contact 2s ease-in-out infinite alternate;
 }
 
 .contact__LeftContainer__Icon {
@@ -45,14 +45,14 @@
 
 .tree_icon:nth-child(1) {
     animation-delay: 2s;
-    top: 25rem;
-    left: -3rem;
+    top: 30rem;
+    left: -5rem;
 }
 
 .tree_icon:nth-child(3) {
     animation-delay: 3s;
-    top: 25rem;
-    left: 3rem;
+    top: 30rem;
+    left: 5rem;
 }
 
 .contact__RightContainer {
@@ -93,7 +93,7 @@
 
 .contact__RightContainer__btn>img {
     width: 100%;
-    animation: expandShrink_contact 2s ease-in-out infinite alternate;
+    animation: expandShrink_contact 2s ease-in-out -5s infinite alternate;
 }
 
 @keyframes expandShrink_contact {
@@ -103,7 +103,36 @@
     }
 
     to {
-        transform: scale(1.05);
+        transform: scale(1.03);
 
+    }
+}
+
+@media (width < 1210px) {
+    .contactMain {
+        height: 88dvh;
+    }
+
+    .tree_icon>a>img {
+        width: 7rem;
+    }
+
+    .tree_icon:nth-child(1) {
+        top: 24rem;
+        left: -1rem;
+    }
+
+    .tree_icon:nth-child(2) {
+        top: 5rem;
+    }
+
+    .tree_icon:nth-child(3) {
+        top: 24rem;
+        left: 1rem;
+    }
+
+    .contact__RightContainer__btn>h1 {
+        right: 14%;
+        font-size: 2.5rem;
     }
 }
