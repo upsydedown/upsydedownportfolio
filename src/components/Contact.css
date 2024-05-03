@@ -75,16 +75,29 @@
     flex-flow: column wrap;
 }
 
-.contact__RightContainer__btn>h1 {
+.contact__RightContainer__btnContainer {
+    position: absolute;
+    right: 19.5rem;
+    width: 15rem;
+    height: 15rem;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.contact__RightContainer__btnContainer:hover {
+    cursor: pointer;
+}
+
+.contact__RightContainer__btn>button>h1 {
     z-index: 1;
     position: absolute;
-    right: 18%;
     font-family: Parry Hotter;
-    /* background-color: red; */
     background: linear-gradient(to bottom, #18120F 50%, #F6EFDF 75%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-size: 2.75rem;
+    font-size: clamp(1.5rem, 3vw, 2.75rem);
     width: 12rem;
     line-height: 152%;
     text-align: center;
@@ -129,6 +142,10 @@
     .tree_icon:nth-child(3) {
         top: 24rem;
         left: 1rem;
+    }
+
+    .contact__RightContainer__btnContainer {
+        right: 9rem;
     }
 
     .contact__RightContainer__btn>h1 {

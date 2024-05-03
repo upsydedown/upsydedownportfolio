@@ -18,7 +18,7 @@ const Home = () => {
             <div className="flex home__HeadingTextContainer">
               <h1 className="home__HeaderText ">Chintan Senapati</h1>
               <div className="flex home__CaptionTextContainer">
-                <span className="cap animate__animated animate__fadeInUp animate__delay-3s">
+                <span className="cap animate__animated animate__fadeInUp animate__delay-1s">
                   UI wizard
                 </span>
                 <span className="bar">|</span>

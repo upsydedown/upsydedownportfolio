@@ -256,3 +256,60 @@
         font-size: 0.65rem;
     }
 }
+
+@media (width < 385px) {
+
+    .aboutMain {
+        height: 100%;
+    }
+
+    .aboutBody {
+        flex-flow: column wrap;
+    }
+
+    .about__LeftContainer {
+        height: fit-content;
+        background-color: red;
+    }
+
+    .about__LeftContainer__HexagonalGridHeading {
+        top: -10rem;
+        left: 4rem;
+        flex-flow: column wrap;
+        z-index: 1;
+    }
+
+    .Hex:nth-child(4),
+    .Hex:nth-child(5) {
+        top: 55%;
+    }
+
+    .Hex:nth-child(6) {
+        top: 70%;
+    }
+
+    .about__LeftContainer__TechStackList {
+        top: 6rem;
+        left: 4.5rem;
+    }
+
+    .about__RightContainer>img {
+        height: 25rem;
+    }
+
+    .about__RightContainer__ParagraphBody {
+        position: relative;
+        top: -32rem;
+        left: 2.75rem;
+        width: 12rem;
+    }
+
+    .about__RightContainer__ParagraphBody>h1 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .about__RightContainer__ParagraphBody>p {
+        font-size: 0.65rem;
+    }
+}

@@ -13,7 +13,7 @@
     height: 100dvh;
     opacity: 0;
     transform: scale(0.8);
-    animation: fadeInZoom 1s ease-in-out forwards;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .introMain__LockBody>h1,
@@ -97,5 +97,17 @@
     100% {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

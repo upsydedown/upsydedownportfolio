@@ -7,12 +7,24 @@ import Project from "./components/Projects.js";
 import About from "./components/About.js";
 import Play from "./components/Play.js";
 import Contact from "./components/Contact.js";
+import MobileMessage from "./components/MobileMessage.js";
 import "animate.css";
 import "./components/Lock_Unlock.css";
 
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
   const [unlocked, setUnlocked] = useState(false);
   const [displayingUnlockMessage, setDisplayingUnlockMessage] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      setIsMobile(width <= 500);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleUnlock = () => {
     setUnlocked(true);
@@ -31,6 +43,7 @@ function App() {
 
   return (
     <>
+      {isMobile && <MobileMessage />}
       <section className="App">
         <div className="introMain">
           {!unlocked && (

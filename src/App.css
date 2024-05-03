@@ -1,3 +1,7 @@
+.App {
+    overflow: hidden;
+}
+
 .NavigationPanel {
     margin: 1rem 0.5rem 0.5rem 0rem;
     position: sticky;
@@ -48,4 +52,10 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #111010;
+}
+
+@media (width < 1000px) {
+    .App {
+        display: none;
+    }
 }

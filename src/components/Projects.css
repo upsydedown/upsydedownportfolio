@@ -45,6 +45,7 @@
 
 .projects__CenterContainer {
     position: relative;
+    flex-flow: column;
     transform: rotateZ(180deg);
     left: -0.75rem;
     flex: 0.3;
@@ -60,7 +61,7 @@
     flex-flow: column wrap;
     position: absolute;
     left: 32%;
-    top: 25.5%;
+    top: 23.5%;
     /* top: 10%; */
 }
 
@@ -95,6 +96,21 @@
     width: clamp(73rem, 73vw, 100rem);
 }
 
+.projects__CenterContainerHeader {
+    position: relative;
+    top: -15.5rem;
+    left: 1rem;
+}
+
+.projects__CenterContainerHeader>h1 {
+    color: #D7A257;
+    font-family: "Lumos";
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-weight: 400;
+    font-style: normal;
+    animation: expand-shrink 2s ease-in-out infinite alternate;
+}
+
 .projects__RightContainer {
     position: relative;
     right: clamp(24rem, 24vw, 28rem);
@@ -106,6 +122,7 @@
     width: clamp(45rem, 45vw, 100rem);
     animation: rotate 5s ease-in-out -5s infinite alternate;
 }
+
 
 @keyframes rotate {
     from {
@@ -122,7 +139,7 @@
         /* background-color: red; */
         width: 30rem;
         left: 30.5%;
-        top: 27.5%;
+        top: 26.5%;
     }
 
     .bookStack2 {
@@ -136,5 +153,71 @@
 
     .bookStack1>.books>a>img {
         width: 80%;
+    }
+
+    .projects__CenterContainerHeader {
+        position: relative;
+        top: -13rem;
+        left: 1rem;
+    }
+
+}
+
+@media (width < 485px) {
+    .projectsBody {
+        height: 80vh;
+        flex: column wrap;
+    }
+
+    .projects__LeftContainer {
+        display: none;
+        flex: 0;
+    }
+
+    .projects__CenterContainer {
+        flex: 1;
+        top: 0rem;
+        left: -0.25rem;
+    }
+
+    .projects__CenterContainer>img {
+        width: 48rem;
+    }
+
+    .bookStack {
+        justify-content: space-around !important;
+        width: 20rem;
+        top: 27.5%;
+    }
+
+    .projects__CenterContainer>h1 {
+        color: wheat;
+        z-index: 5;
+    }
+
+    .bookStack2 {
+        position: relative;
+        top: -1.75rem;
+    }
+
+    .bookStack2>.books>a>img {
+        width: 40%;
+    }
+
+    .bookStack3 {
+        top: -2.75rem;
+    }
+
+    .bookStack2>.books>a>img {
+        width: 40%;
+    }
+
+    .bookStack1>.books>a>img {
+        width: 50%;
+    }
+
+    .projects__RightContainer {
+        display: none;
+        flex: 0;
     }
 }

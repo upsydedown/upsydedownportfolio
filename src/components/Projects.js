@@ -15,16 +15,19 @@ const Projects = () => {
             <div className="flex bookStack">
               <div className="flex bookStack1">
                 <Icon
+                  redirect="https://1021creative.com/"
                   style="books"
                   heading=""
                   image="./images/Projects/1021.png"
                 />
                 <Icon
+                  redirect="https://github.com/upsydedown/LinkedIN_Replica.github.io"
                   style="books"
                   heading=""
                   image="./images/Projects/linkedin.png"
                 />
                 <Icon
+                  redirect="https://aranieco.com/"
                   style="books"
                   heading=""
                   image="./images/Projects/aranieco.png"
@@ -37,16 +40,19 @@ const Projects = () => {
                   image="./images/Projects/book1.png"
                 />
                 <Icon
+                  redirect="https://www.linkedin.com/posts/chintansenapati_eatsure-market-research-and-analysis-part-activity-7170468152126947328-BGDn?utm_source=share&utm_medium=member_desktop"
                   style="books"
                   heading=""
                   image="./images/Projects/book1.png"
                 />
                 <Icon
+                  redirect="https://github.com/upsydedown/HemaSource.github.io"
                   style="books"
                   heading=""
                   image="./images/Projects/hemasource.png"
                 />
                 <Icon
+                  redirect="https://www.linkedin.com/posts/chintansenapati_penpal-design-and-development-activity-7171455041277480961-_v_r?utm_source=share&utm_medium=member_desktop"
                   style="books"
                   heading=""
                   image="./images/Projects/book1.png"
@@ -79,6 +85,9 @@ const Projects = () => {
                   image="./images/Projects/book2.png"
                 />
               </div>
+            </div>
+            <div className="flex projects__CenterContainerHeader">
+              <h1>Incantations</h1>
             </div>
           </div>
           <div className="projects__RightContainer">
