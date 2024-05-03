@@ -26,7 +26,7 @@ const About = () => {
               <Icon
                 style="Hex"
                 heading="JavaScript"
-                image="./images/About/Hexagon/JavaScript_logo.png"
+                image="./images/About/Hexagon/JS_logo.png"
               />
               <Icon
                 style="Hex"
