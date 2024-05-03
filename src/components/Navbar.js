@@ -42,7 +42,7 @@ const Navbar = () => {
             <CustomLink to="/" content="Sanctum" />
             <CustomLink to="/about" content="My Grimoire" />
             <CustomLink to="/projects" content="My Incantations" />
-            <CustomLink to="/play" content="Muddleblood" />
+            {/* <CustomLink to="/play" content="Muddleblood" /> */}
             <CustomLink to="/contact" content="Alchemist's LogBook" />
           </nav>
         </div>

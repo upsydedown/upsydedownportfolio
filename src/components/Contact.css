@@ -28,7 +28,7 @@
 
 .contact__LeftContainer>img {
     width: 95%;
-    animation: expandShrink_contact 2s ease-in-out infinite alternate;
+    /* animation: expandShrink_contact 2s ease-in-out infinite alternate; */
 }
 
 .contact__LeftContainer__Icon {
